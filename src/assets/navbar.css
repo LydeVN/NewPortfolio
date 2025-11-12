@@ -1,0 +1,46 @@
+@import url('https://fonts.cdnfonts.com/css/bruce-forever');
+@import './maincolors.css';
+
+
+nav {
+    align-items: center;
+}
+/* NavBar */
+.menu-items {
+    display: flex;
+    justify-content: right;
+    gap: 2.8%;
+    font-family: Poppins, sans-serif;
+    margin-bottom: 100px;
+    font-family: 'Bruce Forever', sans-serif;
+    color: var(--main-text-color);
+
+}
+
+
+
+.moov,
+.active {
+    
+    position: relative;
+    align-content: center;
+    transform-origin: center;
+}
+
+
+.main-pages {
+    color: purple !important;
+}
+
+
+
+.active {
+    color: var((--color-accent-primary));
+}
+
+
+
+.moov {
+    padding: 5px 0;
+}
+

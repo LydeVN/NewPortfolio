@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Pour Tailwind v4.x, importer le plugin après les directives Tailwind */
+@import "tailwindcss-animated";
+
+
+@import './assets/maincolors.css';
+
+:root {
+  --bg-color: #0f0f1a;
+}
+

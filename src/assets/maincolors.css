@@ -1,0 +1,31 @@
+/* 1. Palette Néon-Tech */
+.theme-neon-tech {
+  --color-accent-primary: #D946EF;   /* Magenta vif */
+  --color-accent-secondary: #22D3EE; /* Cyan électrique */
+  --color-text-light: #F1F5F9;       /* Blanc cassé */
+  --color-text-neutral: #CBD5E1;     /* Gris clair */
+}
+
+/* 2. Palette “Deep Sea” */
+.theme-deep-sea {
+  --color-accent-primary: #14B8A6;   /* Vert azur */
+  --color-accent-secondary: #6366F1; /* Bleu indigo */
+  --color-text-light: #F8FAFC;       /* Blanc crème */
+  --color-text-neutral: #94A3B8;     /* Gris moyen */
+}
+
+/* 3. Palette “Warm Contrast” */
+.theme-warm-contrast {
+  --color-accent-primary: #F97316;   /* Orange brûlé */
+  --color-accent-secondary: #FBBF24; /* Jaune doré */
+  --color-text-light: #FFFFFF;       /* Blanc pur */
+  --color-text-neutral: #E2E8F0;     /* Gris chaud */
+}
+
+.my-theme {
+  --bg-color: #0f0f1a;
+  --main-text-color: #f5f5f5;
+  --neon-accent: #a020f0;
+  --hover-color: #6b21a8;
+  --icons-links-color: #38bdf8;
+}

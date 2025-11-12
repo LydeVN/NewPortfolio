@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Karla+Tamil+Upright:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla+Tamil+Upright:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla+Tamil+Upright:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import './maincolors.css';
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+a:visited {
+  color: inherit;
+}
+
+
+
+main .textPres2 {
+  position: relative;
+  transform-origin: center;
+}
+
+.myPresentation {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  gap: 10% 10%;
+  align-content: space-between;
+  height: 40vh;
+  align-items: center;
+  font-family: Poppins;
+  box-sizing: border-box;
+
+}
+
+
+
+.textPres1 {
+  text-align: justify;
+  width: 300px;
+  padding: 15px 20px;
+  z-index: 1;
+  /* Assure que le texte reste au-dessus */
+  background: rgba(255, 255, 255, 0.137);
+  /* fond clair et semi-transparent */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  /* arrondir les coins */
+  backdrop-filter: blur(10px);
+  /* le flou “verre dépoli” */
+  -webkit-backdrop-filter: blur(10px);
+  /* Safari */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.textPres1 .title {
+  font-family: 'Bruce Forever', sans-serif;
+  color: var(--color-accent-secondary);
+  text-align: center;
+}
+
+.textPres1 .text {
+  color: var(--color-accent-secondary);
+}
+
+.textPres2 {
+  font-size: 1.2em;
+  background-color: rgb(74, 70, 70);
+  border-radius: 10px;
+  text-align: justify;
+  width: 300px;
+  padding: 15px 20px;
+  /* Assure que le texte reste au-dessus */
+  background: rgba(255, 255, 255, 0.137);
+  /* fond clair et semi-transparent */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  /* arrondir les coins */
+  backdrop-filter: blur(10px);
+  /* le flou “verre dépoli” */
+  -webkit-backdrop-filter: blur(10px);
+  /* Safari */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+
+}
+
+.textPres2:hover {
+  padding-left: 20px;
+}
+
+.textPres2 .title {
+  font-family: 'Bruce Forever', sans-serif;
+  color: var(--color-accent-secondary);
+  text-align: center;
+}
+
+.textPres2 .text {
+  color: var(--color-accent-secondary);
+}
+
+
+.textPres3 {
+   flex: 1 1 100%;
+  /* puis centrer horizontalement cet élément seul */
+  margin: 0 auto;
+  position: relative;
+  font-size: 1.2em;
+  background-color: rgb(74, 70, 70);
+  border-radius: 10px;
+  text-align: justify;
+  width: 360px;
+  padding: 15px 20px;
+  /* Assure que le texte reste au-dessus */
+  background: rgba(255, 255, 255, 0.137);
+  /* fond clair et semi-transparent */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  /* arrondir les coins */
+  backdrop-filter: blur(10px);
+  /* le flou “verre dépoli” */
+  -webkit-backdrop-filter: blur(10px);
+  /* Safari */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+
+  margin-right: 5%;
+
+}
+
+.textPres3 .title {
+  font-family: 'Bruce Forever', sans-serif;
+  color: var(--color-accent-secondary);
+  text-align: center;
+}
+
+.textPres3 .text {
+  color: var(--color-accent-secondary);
+}
+
+.photo img {
+  filter: opacity(70%);
+  height: 180px;
+  border-radius: 120px;
+  opacity: 0.7;
+  box-shadow: 3px 3px 3px rgb(31, 31, 31);
+  border: rgb(156, 229, 252) 3px solid;
+}
+
+.textPres span {
+  color: rgb(145, 187, 190);
+  font-size: 1.4em;
+  font-weight: bold;
+}
