@@ -1,159 +1,98 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Karla+Tamil+Upright:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla+Tamil+Upright:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla+Tamil+Upright:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import './maincolors.css';
+/* ==========================================
+   PAGE PROFIL — VERSION CARDS / ENCADRÉE
+   ========================================== */
 
-a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
+.profil-page {
+  padding: 10% 12%;
+  background-color: var(--bg-color);
+  color: var(--main-text-color);
+  font-family: Poppins, sans-serif;
 }
 
-a:visited {
-  color: inherit;
-}
-
-
-
-main .textPres2 {
-  position: relative;
-  transform-origin: center;
-}
-
-.myPresentation {
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  justify-content: center;
-  gap: 10% 10%;
-  align-content: space-between;
-  height: 40vh;
-  align-items: center;
-  font-family: Poppins;
-  box-sizing: border-box;
-
-}
-
-
-
-.textPres1 {
-  text-align: justify;
-  width: 300px;
-  padding: 15px 20px;
-  z-index: 1;
-  /* Assure que le texte reste au-dessus */
-  background: rgba(255, 255, 255, 0.137);
-  /* fond clair et semi-transparent */
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 16px;
-  /* arrondir les coins */
-  backdrop-filter: blur(10px);
-  /* le flou “verre dépoli” */
-  -webkit-backdrop-filter: blur(10px);
-  /* Safari */
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-}
-
-
-
-.textPres1 .title {
-  font-family: 'Bruce Forever', sans-serif;
-  color: var(--color-accent-secondary);
+/* ---------- HERO ---------- */
+.profil-hero {
   text-align: center;
+  margin-bottom: 60px;
 }
 
-.textPres1 .text {
-  color: var(--color-accent-secondary);
+.profil-hero h1 {
+  font-size: 3.8rem;
+  font-family: Kanit;
+  color: var(--color-accent-primary);
+  text-shadow: 0 0 12px var(--color-accent-primary);
 }
 
-.textPres2 {
-  font-size: 1.2em;
-  background-color: rgb(74, 70, 70);
-  border-radius: 10px;
-  text-align: justify;
-  width: 300px;
-  padding: 15px 20px;
-  /* Assure que le texte reste au-dessus */
-  background: rgba(255, 255, 255, 0.137);
-  /* fond clair et semi-transparent */
-  border: 1px solid rgba(255, 255, 255, 0.3);
+.profil-hero p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: var(--color-text-neutral);
+}
+
+/* ---------- GRID ---------- */
+.profil-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+}
+
+/* ---------- PROFIL CARD ---------- */
+.profil-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(217, 70, 239, 0.25);
+  padding: 30px;
   border-radius: 16px;
-  /* arrondir les coins */
-  backdrop-filter: blur(10px);
-  /* le flou “verre dépoli” */
-  -webkit-backdrop-filter: blur(10px);
-  /* Safari */
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 20px rgba(217, 70, 239, 0.15);
+  transition: 0.3s ease;
 }
 
-.textPres2:hover {
-  padding-left: 20px;
+.profil-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(217, 70, 239, 0.30);
 }
 
-.textPres2 .title {
-  font-family: 'Bruce Forever', sans-serif;
-  color: var(--color-accent-secondary);
-  text-align: center;
+.profil-card h2 {
+  font-family: Kanit;
+  color: var(--color-accent-primary);
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  text-shadow: 0 0 8px rgba(217, 70, 239, 0.4);
 }
 
-.textPres2 .text {
-  color: var(--color-accent-secondary);
+.profil-card p {
+  line-height: 1.7;
+  font-size: 1.05rem;
+  color: var(--color-text-neutral);
 }
 
+/* ---------- LISTES ---------- */
+.profil-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
 
-.textPres3 {
-   flex: 1 1 100%;
-  /* puis centrer horizontalement cet élément seul */
-  margin: 0 auto;
+.profil-list li {
+  margin-bottom: 10px;
+  padding-left: 18px;
   position: relative;
-  font-size: 1.2em;
-  background-color: rgb(74, 70, 70);
-  border-radius: 10px;
-  text-align: justify;
-  width: 360px;
-  padding: 15px 20px;
-  /* Assure que le texte reste au-dessus */
-  background: rgba(255, 255, 255, 0.137);
-  /* fond clair et semi-transparent */
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 16px;
-  /* arrondir les coins */
-  backdrop-filter: blur(10px);
-  /* le flou “verre dépoli” */
-  -webkit-backdrop-filter: blur(10px);
-  /* Safari */
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-
-  margin-right: 5%;
-
 }
 
-.textPres3 .title {
-  font-family: 'Bruce Forever', sans-serif;
+.profil-list li::before {
+  content: "•";
   color: var(--color-accent-secondary);
-  text-align: center;
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
 }
 
-.textPres3 .text {
-  color: var(--color-accent-secondary);
-}
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .profil-page {
+    padding: 20% 8%;
+  }
 
-.photo img {
-  filter: opacity(70%);
-  height: 180px;
-  border-radius: 120px;
-  opacity: 0.7;
-  box-shadow: 3px 3px 3px rgb(31, 31, 31);
-  border: rgb(156, 229, 252) 3px solid;
-}
-
-.textPres span {
-  color: rgb(145, 187, 190);
-  font-size: 1.4em;
-  font-weight: bold;
+  .profil-hero h1 {
+    font-size: 3rem;
+  }
 }
