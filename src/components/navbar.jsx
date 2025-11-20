@@ -16,7 +16,7 @@ const NavBar = () => {
             <NavLink to="/profil">Profil</NavLink>
           </div>
           <div className="moov hover:animate-jump hover:animate-once">
-            <NavLink to="/btssio">BTS SIO</NavLink>
+            <NavLink to="/bts_sio">BTS SIO</NavLink>
           </div>
           <div className="moov hover:animate-jump hover:animate-once">
             <NavLink to="/skills">Compétences</NavLink>

@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import NavBar from './components/navbar';
 import Home from './components/pages/home';
 import Profil from './components/pages/profil';
+import BtsSio from './components/pages/btsio';
 import './index.css'
 import Footer from './components/footer';
 import { Analytics } from "@vercel/analytics/react"
@@ -23,11 +24,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/profil" element={<Profil />} />
-        {/* <Route path="/bts_sio" element={<BtsSio />} />
-        <Route path="/competences" element={<Competences />} />
+        <Route path="/bts_sio" element={<BtsSio />} />
+        {/* <Route path="/competences" element={<Competences />} />
         <Route path="/experiences" element={<Experiences />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} /> */}
+        <Route path="/contact" element={<Contact />} />  */}
       </Routes>
       {/* <Footer /> */}
       <Analytics />
