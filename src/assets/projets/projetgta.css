@@ -1,0 +1,105 @@
+/* ==========================================
+   PAGE PROJET — VERSION CARDS / STRUCTURÉE
+   ========================================== */
+
+.project-page {
+  padding: 10% 12%;
+  background-color: var(--bg-color);
+  color: var(--main-text-color);
+  font-family: Poppins, sans-serif;
+}
+
+/* --------- HERO --------- */
+.project-hero {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.project-hero h1 {
+  font-size: 3.2rem;
+  font-family: Kanit;
+  color: var(--color-accent-primary);
+  text-shadow: 0 0 12px var(--color-accent-primary);
+}
+
+.project-hero p {
+  font-size: 1.1rem;
+  color: var(--color-text-neutral);
+  margin-top: 10px;
+}
+
+/* --------- GRID --------- */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 40px;
+}
+
+/* --------- CARDS --------- */
+.project-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(217, 70, 239, 0.25);
+  padding: 30px;
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 20px rgba(217, 70, 239, 0.15);
+  transition: 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(217, 70, 239, 0.30);
+}
+
+.project-card h2 {
+  font-family: Kanit;
+  color: var(--color-accent-primary);
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  text-shadow: 0 0 8px rgba(217, 70, 239, 0.4);
+}
+
+.project-card p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-text-neutral);
+}
+
+/* --------- LISTES --------- */
+.project-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.project-list li {
+  margin-bottom: 10px;
+  padding-left: 18px;
+  position: relative;
+}
+
+.project-list li::before {
+  content: "•";
+  color: var(--color-accent-secondary);
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+/* --------- NOTE --------- */
+.project-note {
+  font-style: italic;
+  color: var(--color-accent-secondary);
+  margin-top: 10px;
+}
+
+/* --------- RESPONSIVE --------- */
+@media (max-width: 768px) {
+  .project-page {
+    padding: 20% 8%;
+  }
+
+  .project-hero h1 {
+    font-size: 2.5rem;
+  }
+}
