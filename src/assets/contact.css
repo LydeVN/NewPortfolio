@@ -1,0 +1,145 @@
+/* ==========================================
+   PAGE CONTACT — STYLE CARDS / NEON DARK
+   ========================================== */
+
+.contact-page {
+  padding: 10% 12%;
+  background-color: var(--bg-color);
+  color: var(--main-text-color);
+  font-family: Poppins, sans-serif;
+}
+
+/* -------- HERO -------- */
+.contact-hero {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.contact-hero h1 {
+  font-size: 3.2rem;
+  font-family: Kanit;
+  color: var(--color-accent-primary);
+  text-shadow: 0 0 12px var(--color-accent-primary);
+}
+
+.contact-hero p {
+  color: var(--color-text-neutral);
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+/* -------- GRID -------- */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 40px;
+}
+
+/* -------- CARD -------- */
+.contact-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(217, 70, 239, 0.25);
+  padding: 30px;
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 20px rgba(217, 70, 239, 0.15);
+  transition: 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(217, 70, 239, 0.30);
+}
+
+.contact-card h2 {
+  font-family: Kanit;
+  color: var(--color-accent-primary);
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+/* -------- MAIL LINK -------- */
+.mail-box {
+  margin: 20px 0;
+  padding: 12px 18px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(217, 70, 239, 0.35);
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.mail-box a {
+  color: var(--color-accent-secondary);
+  font-size: 1.1rem;
+  font-weight: bold;
+  word-break: break-all;
+}
+
+.mail-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px rgba(217, 70, 239, 0.35);
+}
+
+/* -------- FORM -------- */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  font-family: Kanit;
+  font-size: 1.1rem;
+  color: var(--color-text-neutral);
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-top: 8px;
+  padding: 12px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(217, 70, 239, 0.25);
+  color: var(--main-text-color);
+  font-size: 1rem;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--color-accent-secondary);
+  box-shadow: 0 0 8px var(--color-accent-secondary);
+}
+
+.contact-btn {
+  margin-top: 10px;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-family: Kanit;
+  background: var(--color-accent-primary);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.25s ease;
+  color: white;
+}
+
+.contact-btn:hover {
+  background: var(--color-accent-secondary);
+  transform: translateY(-3px);
+}
+
+/* -------- RESPONSIVE -------- */
+@media (max-width: 768px) {
+  .contact-page {
+    padding: 20% 8%;
+  }
+
+  .contact-hero h1 {
+    font-size: 2.5rem;
+  }
+}
