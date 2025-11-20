@@ -191,190 +191,7 @@ a:visited {
 }
 
 
-/* From Uiverse.io by MuhammadHasann */ 
-.button {
-  --black-700: hsla(0 0% 12% / 1);
-  --border_radius: 9999px;
-  --transtion: 0.3s ease-in-out;
-  --offset: 2px;
 
-  cursor: pointer;
-  position: relative;
-  font-family: 'Bruce Forever', sans-serif;
-
-  
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-
-  transform-origin: center;
-
-  padding: 1rem 2rem;
-  background-color: transparent;
-
-  border: none;
-  border-radius: var(--border_radius);
-  transform: scale(calc(1 + (var(--active, 0) * 0.1)));
-
-  transition: transform var(--transtion);
-}
-
-.button::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  width: 100%;
-  height: 100%;
-  background-color: var(--black-700);
-
-  border-radius: var(--border_radius);
-  box-shadow: inset 0 0.5px hsl(0, 0%, 100%), inset 0 -1px 2px 0 hsl(0, 0%, 0%),
-    0px 4px 10px -4px hsla(0 0% 0% / calc(1 - var(--active, 0))),
-    0 0 0 calc(var(--active, 0) * 0.375rem) hsl(260 97% 50% / 0.75);
-
-  transition: all var(--transtion);
-  z-index: 0;
-}
-
-.button::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  width: 100%;
-  height: 100%;
-  background-color: hsla(260 97% 61% / 0.75);
-  background-image: radial-gradient(
-      at 51% 89%,
-      hsla(266, 45%, 74%, 1) 0px,
-      transparent 50%
-    ),
-    radial-gradient(at 100% 100%, hsla(266, 36%, 60%, 1) 0px, transparent 50%),
-    radial-gradient(at 22% 91%, hsla(266, 36%, 60%, 1) 0px, transparent 50%);
-  background-position: top;
-
-  opacity: var(--active, 0);
-  border-radius: var(--border_radius);
-  transition: opacity var(--transtion);
-  z-index: 2;
-}
-
-.button:is(:hover, :focus-visible) {
-  --active: 1;
-}
-.button:active {
-  transform: scale(1);
-}
-
-.button .dots_border {
-  --size_border: calc(100% + 2px);
-
-  overflow: hidden;
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  width: var(--size_border);
-  height: var(--size_border);
-  background-color: transparent;
-
-  border-radius: var(--border_radius);
-  z-index: -10;
-}
-
-.button .dots_border::before {
-  content: "";
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transform-origin: left;
-  transform: rotate(0deg);
-
-  width: 100%;
-  height: 2rem;
-  background-color: white;
-
-  mask: linear-gradient(transparent 0%, white 120%);
-  animation: rotate 2s linear infinite;
-}
-
-@keyframes rotate {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.button .sparkle {
-  position: relative;
-  z-index: 10;
-
-  width: 1.75rem;
-}
-
-.button .sparkle .path {
-  fill: currentColor;
-  stroke: currentColor;
-
-  transform-origin: center;
-
-  color: hsl(0, 0%, 100%);
-}
-
-.button:is(:hover, :focus) .sparkle .path {
-  animation: path 1.5s linear 0.5s infinite;
-}
-
-.button .sparkle .path:nth-child(1) {
-  --scale_path_1: 1.2;
-}
-.button .sparkle .path:nth-child(2) {
-  --scale_path_2: 1.2;
-}
-.button .sparkle .path:nth-child(3) {
-  --scale_path_3: 1.2;
-}
-
-@keyframes path {
-  0%,
-  34%,
-  71%,
-  100% {
-    transform: scale(1);
-  }
-  17% {
-    transform: scale(var(--scale_path_1, 1));
-  }
-  49% {
-    transform: scale(var(--scale_path_2, 1));
-  }
-  83% {
-    transform: scale(var(--scale_path_3, 1));
-  }
-}
-
-.button .text_button {
-  position: relative;
-  z-index: 10;
-  color: var(--color-accent-secondary);
-
-  background-image: linear-gradient(
-    90deg,
-    var(--color-accent-secondary),
-    hsla(0 0% 100% / var(--active, 0)) 120%
-  );
-  background-clip: text;
-
-  font-size: 1rem;
-  color: transparent;
-}
 
 
 
@@ -555,81 +372,36 @@ h2 {
   /* Couleur au survol */
 }
 
-/* From Uiverse.io by dovatgabriel */ 
-.buttonDownload {
- display: inline-block;
- position: relative;
- padding: 10px 25px;
- background-color: #b813c7;
- color: white;
- font-family: sans-serif;
- text-decoration: none;
- font-size: 0.9em;
- text-align: center;
- text-indent: 15px;
- border: none;
- border-radius: 20px;
+/* From Uiverse.io by adamgiebl */ 
+.cssbuttons-io-button {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 0.8em 1.5em 0.8em 1.2em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(
+    0deg,
+    rgba(77, 54, 208, 1) 0%,
+    rgba(132, 116, 254, 1) 100%
+  );
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #4d36d0be;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
 }
 
-.buttonDownload:hover {
- background-color: #45a21a;
- color: white;
+.cssbuttons-io-button svg {
+  margin-right: 8px;
 }
 
-.buttonDownload:before, .buttonDownload:after {
- content: ' ';
- display: block;
- position: absolute;
- left: 15px;
- top: 52%;
+.cssbuttons-io-button:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #4d36d0be;
 }
 
-.buttonDownload:before {
- width: 10px;
- height: 2px;
- border-style: solid;
- border-width: 0 2px 2px;
-}
-
-.buttonDownload:after {
- width: 0;
- height: 0;
- margin-left: 3px;
- margin-top: -7px;
- border-style: solid;
- border-width: 4px 4px 0 4px;
- border-color: transparent;
- border-top-color: inherit;
- animation: downloadArrow 1s linear infinite;
- animation-play-state: paused;
-}
-
-.buttonDownload:hover:before {
- border-color: #cdefbd;
-}
-
-.buttonDownload:hover:after {
- border-top-color: #cdefbd;
- animation-play-state: running;
-}
-
-@keyframes downloadArrow {
- 0% {
-  margin-top: -7px;
-  opacity: 1;
- }
-
- 0.001% {
-  margin-top: -15px;
-  opacity: 0.4;
- }
-
- 50% {
-  opacity: 1;
- }
-
- 100% {
-  margin-top: 0;
-  opacity: 0.4;
- }
+.cssbuttons-io-button:active {
+  box-shadow: 0 0.3em 1em -0.5em #4d36d0be;
 }

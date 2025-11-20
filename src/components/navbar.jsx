@@ -19,13 +19,13 @@ const NavBar = () => {
             <NavLink to="/bts_sio">BTS SIO</NavLink>
           </div>
           <div className="moov hover:animate-jump hover:animate-once">
-            <NavLink to="/skills">Compétences</NavLink>
+            <NavLink to="/veille">Veille</NavLink>
           </div>
           <div className="moov hover:animate-jump hover:animate-once">
             <NavLink to="/experiences">Expériences</NavLink>
           </div>
           <div className="moov hover:animate-jump hover:animate-once">
-            <NavLink to="/projets">Projets</NavLink>
+            <NavLink to="/projetgta">Projets</NavLink>
           </div>
           <div className="moov hover:animate-jump hover:animate-once">
             <NavLink to="/contact">Contact</NavLink>
