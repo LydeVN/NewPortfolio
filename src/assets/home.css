@@ -197,12 +197,13 @@ a:visited {
 
 /* todo */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
 
   .name {
     order: 1;
     text-align: center;
     margin-left: 0;
+    font-size: 1em;
   }
 
   @keyframes top {
@@ -405,3 +406,5 @@ h2 {
 .cssbuttons-io-button:active {
   box-shadow: 0 0.3em 1em -0.5em #4d36d0be;
 }
+
+

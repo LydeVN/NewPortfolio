@@ -1,46 +1,124 @@
 @import url('https://fonts.cdnfonts.com/css/bruce-forever');
 @import './maincolors.css';
 
-
-nav {
+/* Container */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 25px 40px;
+    color: var(--main-text-color);
 }
-/* NavBar */
+
+/* Logo */
+.nav-logo {
+    font-family: 'Bruce Forever', sans-serif;
+    color: var(--color-accent-primary);
+    text-shadow: 0 0 8px var(--color-accent-primary);
+    font-size: 1.7rem;
+}
+
+/* Menu Desktop */
 .menu-items {
     display: flex;
-    justify-content: right;
-    gap: 2.8%;
-    font-family: Poppins, sans-serif;
-    margin-bottom: 100px;
+    gap: 30px;
     font-family: 'Bruce Forever', sans-serif;
+    transition: 0.4s ease;
+}
+
+.menu-items a {
     color: var(--main-text-color);
-
+    text-decoration: none;
+    font-size: 1.05rem;
+    transition: 0.3s ease;
 }
 
-
-
-.moov,
-.active {
-    
-    position: relative;
-    align-content: center;
-    transform-origin: center;
+.menu-items a:hover {
+    color: var(--color-accent-secondary);
+    text-shadow: 0 0 10px var(--color-accent-primary);
 }
 
-
-.main-pages {
-    color: purple !important;
+/* Active link */
+.menu-items .active {
+    color: var(--color-accent-secondary) !important;
 }
 
+/* ------------------------------- */
+/* BURGER MENU */
+/* ------------------------------- */
 
-
-.active {
-    color: var((--color-accent-primary));
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+    z-index: 1000;
 }
 
-
-
-.moov {
-    padding: 5px 0;
+.burger span {
+    width: 28px;
+    height: 3px;
+    background: var(--main-text-color);
+    border-radius: 4px;
+    transition: 0.3s ease;
 }
 
+/* Animation du burger ouvert */
+.burger.open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.burger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ------------------------------- */
+/* RESPONSIVE */
+/* ------------------------------- */
+
+@media (max-width: 880px) {
+
+    /* afficher le burger */
+    .burger {
+        display: flex;
+        z-index: 9999;
+    }
+
+    /* cacher le menu initialement */
+    .menu-items {
+        position: absolute;
+        top: 75px;
+        right: 0;
+        background: rgba(10, 10, 20, 0.98);
+        backdrop-filter: blur(8px);
+        flex-direction: column;
+        width: 220px;
+        padding: 25px 20px;
+        border-left: 2px solid var(--color-accent-primary);
+        border-bottom: 2px solid var(--color-accent-primary);
+        border-radius: 0 0 0 12px;
+        box-shadow: -5px 5px 15px rgba(0,0,0,0.4);
+
+        transform: translateX(120%);
+        opacity: 0;
+        pointer-events: none;
+
+        z-index: 9999;
+    }
+
+    /* menu visible */
+    .menu-items.show {
+        transform: translateX(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .menu-items a {
+        padding: 12px 0;
+        font-size: 1.2rem;
+    }
+}

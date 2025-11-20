@@ -120,7 +120,7 @@
   padding: 12px;
   font-size: 1.1rem;
   font-family: Kanit;
-  background: var(--color-accent-primary);
+  background: rgb(39, 1, 39);
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -129,7 +129,7 @@
 }
 
 .contact-btn:hover {
-  background: var(--color-accent-secondary);
+  background: rgb(65, 1, 65);
   transform: translateY(-3px);
 }
 
