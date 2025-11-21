@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 @import "tailwindcss-animated";
-
-
 @import './assets/maincolors.css';
 
 :root {
   --bg-color: #0f0f1a;
 }
+
+
 

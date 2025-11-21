@@ -1,124 +1,201 @@
 @import url('https://fonts.cdnfonts.com/css/bruce-forever');
 @import './maincolors.css';
 
-/* Container */
-.navbar-container {
+/* --------------------------------------------- */
+/* HEADER GLOBAL */
+/* --------------------------------------------- */
+
+.neon-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+
+    /* Fond visible + flou */
+    background: rgba(18, 18, 35, 0.55);
+    backdrop-filter: blur(10px);
+
+    /* Glow général */
+    box-shadow: 0 0 25px rgba(168, 0, 255, 0.45);
+}
+
+/* Ligne neon supérieure */
+.neon-line {
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(
+        90deg,
+        var(--color-accent-primary),
+        var(--color-accent-secondary),
+        var(--color-accent-primary)
+    );
+    box-shadow:
+        0 0 12px var(--color-accent-primary),
+        0 0 22px var(--color-accent-secondary);
+}
+
+/* --------------------------------------------- */
+/* NAVBAR */
+/* --------------------------------------------- */
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 40px;
-    color: var(--main-text-color);
+    padding: 18px 40px;
+
+    background: rgba(15, 15, 30, 0.35);
+    border-bottom: 1px solid rgba(217, 70, 239, 0.3);
 }
 
 /* Logo */
 .nav-logo {
     font-family: 'Bruce Forever', sans-serif;
-    color: var(--color-accent-primary);
-    text-shadow: 0 0 8px var(--color-accent-primary);
     font-size: 1.7rem;
+    color: var(--color-accent-secondary);
+    text-shadow: 0 0 10px var(--color-accent-secondary), 
+                 0 0 20px var(--color-accent-primary);
 }
 
-/* Menu Desktop */
-.menu-items {
+/* --------------------------------------------- */
+/* LINKS DESKTOP */
+/* --------------------------------------------- */
+
+.nav-links {
     display: flex;
     gap: 30px;
     font-family: 'Bruce Forever', sans-serif;
-    transition: 0.4s ease;
+    align-items: center;
 }
 
-.menu-items a {
-    color: var(--main-text-color);
+.nav-links a {
     text-decoration: none;
-    font-size: 1.05rem;
-    transition: 0.3s ease;
+    color: white !important;      /* Toujours blanc */
+    font-size: 1.1rem;
+    position: relative;
+    transition: 0.25s ease;
 }
 
-.menu-items a:hover {
-    color: var(--color-accent-secondary);
-    text-shadow: 0 0 10px var(--color-accent-primary);
+/* Empêche tout style visited */
+.nav-links a:visited {
+    color: white !important;
 }
 
-/* Active link */
-.menu-items .active {
-    color: var(--color-accent-secondary) !important;
+/* Hover Neon */
+.nav-links a:hover {
+    color: white !important;
+    text-shadow:
+        0 0 6px var(--color-accent-secondary),
+        0 0 12px var(--color-accent-primary),
+        0 0 20px var(--color-accent-primary);
 }
 
-/* ------------------------------- */
+/* Underline neon animée */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background: var(--color-accent-secondary);
+    box-shadow:
+        0 0 10px var(--color-accent-secondary),
+        0 0 18px var(--color-accent-primary);
+    transition: width 0.3s ease;
+}
+
+/* Hover underline */
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Active underline permanente */
+.nav-links a.active::after {
+    width: 100%;
+}
+
+/* Glow léger sur l’onglet actif */
+.nav-links a.active {
+    color: white !important;
+    text-shadow:
+        0 0 6px var(--color-accent-secondary),
+        0 0 14px var(--color-accent-primary);
+}
+
+/* --------------------------------------------- */
 /* BURGER MENU */
-/* ------------------------------- */
+/* --------------------------------------------- */
 
 .burger {
     display: none;
     flex-direction: column;
-    cursor: pointer;
     gap: 6px;
-    z-index: 1000;
+    cursor: pointer;
+    z-index: 10000;
 }
 
 .burger span {
     width: 28px;
     height: 3px;
-    background: var(--main-text-color);
+    background: var(--color-accent-secondary);
     border-radius: 4px;
     transition: 0.3s ease;
+    box-shadow: 0 0 10px var(--color-accent-secondary);
 }
 
-/* Animation du burger ouvert */
-.burger.open span:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+/* Animation en X */
+.burger.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
 }
 
-.burger.open span:nth-child(2) {
+.burger.active span:nth-child(2) {
     opacity: 0;
 }
 
-.burger.open span:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+.burger.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
 }
 
-/* ------------------------------- */
+/* --------------------------------------------- */
 /* RESPONSIVE */
-/* ------------------------------- */
+/* --------------------------------------------- */
 
 @media (max-width: 880px) {
 
-    /* afficher le burger */
     .burger {
         display: flex;
-        z-index: 9999;
     }
 
-    /* cacher le menu initialement */
-    .menu-items {
+    .nav-links {
         position: absolute;
-        top: 75px;
+        top: 70px;
         right: 0;
-        background: rgba(10, 10, 20, 0.98);
-        backdrop-filter: blur(8px);
+        padding: 30px;
+        gap: 20px;
+        
         flex-direction: column;
-        width: 220px;
-        padding: 25px 20px;
+        background: rgba(20, 20, 40, 0.9);
         border-left: 2px solid var(--color-accent-primary);
         border-bottom: 2px solid var(--color-accent-primary);
         border-radius: 0 0 0 12px;
-        box-shadow: -5px 5px 15px rgba(0,0,0,0.4);
+        box-shadow: -3px 3px 15px rgba(168, 0, 255, 0.4);
 
         transform: translateX(120%);
         opacity: 0;
         pointer-events: none;
-
+        transition: 0.35s ease;
         z-index: 9999;
     }
 
-    /* menu visible */
-    .menu-items.show {
+    .nav-links.open {
         transform: translateX(0);
         opacity: 1;
         pointer-events: auto;
     }
 
-    .menu-items a {
-        padding: 12px 0;
-        font-size: 1.2rem;
+    .nav-links a {
+        font-size: 1.3rem;
     }
 }
+

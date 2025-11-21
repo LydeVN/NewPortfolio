@@ -5,25 +5,19 @@ import { NavLink } from "react-router-dom";
 export default function NavBar() {
   const [open, setOpen] = useState(false);
 
-  const toggleMenu = () => setOpen(!open);
-
   return (
-    <header>
-      <nav className="navbar-container my-theme">
+    <header className="neon-header my-theme">
 
-      
-        {/* Burger button */}
-        <div
-          className={`burger ${open ? "open" : ""}`}
-          onClick={toggleMenu}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+      {/* BARRE SUPERIEURE NEON */}
+      <div className="neon-line"></div>
 
-        {/* Menu Desktop + Mobile */}
-        <div className={`menu-items ${open ? "show" : ""}`}>
+      <nav className="navbar">
+
+        {/* Logo (optionnel) */}
+        <div className="nav-logo">JV</div>
+
+        {/* Liens */}
+        <div className={`nav-links ${open ? "open" : ""}`}>
           <NavLink to="/" onClick={() => setOpen(false)}>Home</NavLink>
           <NavLink to="/profil" onClick={() => setOpen(false)}>Profil</NavLink>
           <NavLink to="/bts_sio" onClick={() => setOpen(false)}>BTS SIO</NavLink>
@@ -31,6 +25,13 @@ export default function NavBar() {
           <NavLink to="/experiences" onClick={() => setOpen(false)}>Expériences</NavLink>
           <NavLink to="/projetgta" onClick={() => setOpen(false)}>Projets</NavLink>
           <NavLink to="/contact" onClick={() => setOpen(false)}>Contact</NavLink>
+        </div>
+
+        {/* Burger */}
+        <div className={`burger ${open ? "active" : ""}`} onClick={() => setOpen(!open)}>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
 
       </nav>

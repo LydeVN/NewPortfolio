@@ -141,7 +141,7 @@ export default function Veille() {
                     {/* === VEILLE 3 (NOUVEL ARTICLE) === */}
                     <article className="veille-card" data-aos="fade-up">
                         <h2>AITSM : L’arrivée des LLM et de l’Agentic AI transforme le support IT</h2>
-                        <p className="veille-date">Article antérieur</p>
+                        <p className="veille-date">10 septembre</p>
 
                         <p>
                             Alors que les organisations font face à un volume croissant d’incidents

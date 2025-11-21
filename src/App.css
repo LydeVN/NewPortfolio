@@ -42,3 +42,7 @@
 :root {
   background-color: var(--bg-color);
 }
+
+main {
+  margin-top: 50px;
+}
