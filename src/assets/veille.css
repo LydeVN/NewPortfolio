@@ -1,0 +1,132 @@
+/* PAGE */
+.veille-page {
+    padding: 8% 10%;
+    color: var(--main-text-color);
+}
+
+/* HEADER */
+.veille-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.veille-header h1 {
+    font-family: Kanit;
+    font-size: 3.2rem;
+    color: var(--color-accent-primary);
+    text-shadow: 0 0 15px var(--color-accent-primary);
+}
+
+.veille-intro {
+    font-size: 1.3rem;
+    margin-top: 15px;
+    color: var(--color-text-neutral);
+}
+
+/* CAROUSEL STRUCTURE */
+.veille-carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--color-accent-primary);
+    color: var(--color-accent-secondary);
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    z-index: 10;
+}
+
+.carousel-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: scale(1.1);
+}
+
+.left {
+    margin-right: 20px;
+}
+
+.right {
+    margin-left: 20px;
+}
+
+/* CAROUSEL */
+.veille-carousel {
+    display: flex;
+    gap: 40px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 20px;
+
+    scrollbar-width: none; /* Hide Firefox scrollbar */
+}
+
+.veille-carousel::-webkit-scrollbar {
+    display: none; /* Hide Chrome scrollbar */
+}
+
+/* CARTES */
+.veille-card {
+    min-width: 550px;
+    max-width: 650px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(217, 70, 239, 0.4);
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 0 20px rgba(217,70,239,0.25);
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease;
+}
+
+.veille-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 30px rgba(217,70,239,0.45);
+}
+
+.veille-card h2 {
+    font-family: Kanit;
+    font-size: 2rem;
+    color: var(--color-accent-secondary);
+}
+
+.veille-date {
+    margin: 8px 0 18px;
+    font-size: 1rem;
+    color: var(--color-text-neutral);
+}
+
+.veille-card p {
+    font-size: 1.25rem;
+    line-height: 1.9rem;
+    margin: 12px 0;
+}
+
+.veille-card h3 {
+    margin-top: 28px;
+    font-size: 1.45rem;
+    color: var(--color-accent-primary);
+    font-family: Kanit;
+    text-shadow: 0 0 10px var(--color-accent-primary);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .veille-card {
+        min-width: 85%;
+        max-width: 90%;
+    }
+
+    .carousel-btn {
+        display: none;
+    }
+
+    .veille-header h1 {
+        font-size: 2.3rem;
+    }
+}
