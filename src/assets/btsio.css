@@ -1,93 +1,76 @@
 /* ==========================================
-   PAGE BTS SIO — STYLE COHÉRENT AVEC HOME.CSS
+   PAGE BTS SIO — STYLE IDENTIQUE À PROFIL
    ========================================== */
 
 .bts-page {
-  padding: 5%;
-  color: var(--main-text-color);
+  padding: 10% 12%;
   background-color: var(--bg-color);
+  color: var(--main-text-color);
   font-family: Poppins, sans-serif;
 }
 
 /* ---------- HERO ---------- */
 .bts-hero {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .bts-hero h1 {
   font-size: 3.8rem;
-  font-weight: 700;
   font-family: Kanit;
   color: var(--color-accent-primary);
-  text-shadow: 0 0 10px var(--color-accent-primary);
+  text-shadow: 0 0 12px var(--color-accent-primary);
 }
 
 .bts-hero p {
-  font-size: 1.2rem;
-  color: var(--color-text-neutral);
   margin-top: 10px;
+  font-size: 1.1rem;
+  color: var(--color-text-neutral);
 }
 
-/* ---------- TITRES SECTIONS ---------- */
-.bts-section h2 {
-  color: var(--color-accent-primary);
-  font-size: 2rem;
-  margin-bottom: 15px;
+/* ---------- GRID ---------- */
+.bts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+}
+
+/* ---------- CARD ---------- */
+.bts-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(217, 70, 239, 0.25);
+  padding: 30px;
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 20px rgba(217, 70, 239, 0.15);
+  transition: 0.3s ease;
+  text-align: justify;
+}
+
+.bts-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(217, 70, 239, 0.30);
+}
+
+.bts-card h2 {
   font-family: Kanit;
+  color: var(--color-accent-primary);
+  font-size: 1.8rem;
+  margin-bottom: 15px;
   text-shadow: 0 0 8px rgba(217, 70, 239, 0.4);
 }
 
-/* ---------- SECTIONS ---------- */
-.bts-section {
-  margin-bottom: 60px;
-  font-size: 1.05rem;
+.bts-card p {
   line-height: 1.7;
+  font-size: 1.05rem;
   color: var(--color-text-neutral);
-}
-
-/* ---------- CARTES SISR / SLAM ---------- */
-.bts-options {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-  margin: 60px 0;
-}
-
-.bts-option-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(217, 70, 239, 0.25);
-  padding: 25px;
-  width: 360px;
-  border-radius: 15px;
-  transition: 0.3s ease;
-  backdrop-filter: blur(4px);
-}
-
-.bts-option-card h3 {
-  font-family: Kanit;
-  font-size: 1.5rem;
-  color: var(--color-accent-primary);
-  margin-bottom: 10px;
-  text-shadow: 0 0 8px rgba(217, 70, 239, 0.5);
-}
-
-.bts-option-card p {
-  font-size: 1rem;
-  color: var(--color-text-neutral);
-  line-height: 1.6;
-}
-
-.bts-option-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 15px rgba(217, 70, 239, 0.4);
 }
 
 /* ---------- LISTES ---------- */
 .bts-list {
-  padding-left: 0;
   list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
 }
 
 .bts-list li {
@@ -107,14 +90,10 @@
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 768px) {
   .bts-page {
-    padding: 18% 8%;
+    padding: 20% 8%;
   }
 
   .bts-hero h1 {
-    font-size: 2.8rem;
-  }
-
-  .bts-option-card {
-    width: 100%;
+    font-size: 3rem;
   }
 }

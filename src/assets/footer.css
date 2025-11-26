@@ -2,7 +2,7 @@
 
 /* todo alignement*/
 footer {
-  background-color: rgb(51, 50, 50);
+  background-color: #0F0F1A;
   text-align: center;
   padding: 30px;
   color: white;
@@ -10,27 +10,12 @@ footer {
   bottom: 0;
   text-decoration: bold;
   margin-top: 200px;
-}
-
-/* Centrer le contenu du footer et ajuster l'espacement des colonnes */
-.footer {
-  display: flex;
-  flex-wrap: wrap; /* Pour permettre aux colonnes de s'ajuster */
-  justify-content: center; /* Centrer horizontalement les colonnes */
-  align-items: flex; /* Aligner les éléments en haut */
-  gap: 10%; /* Espace entre les colonnes */
   font-family: Kanit;
 }
 
-/* Ajuster les colonnes pour les centrer et les espacer correctement */
 
 
-.col-1, .col-2, .col-3 {
-  flex: 1 1 1 30%; /* Les colonnes vont occuper 30% de la largeur, mais vont s'ajuster selon l'espace disponible */
-  max-width: 30%; /* Limiter la largeur des colonnes pour éviter qu'elles prennent toute la place */
-}
 
-/* Centrer le texte et autres éléments dans la colonne newsletter */
 .limited {
   padding-top: 20px;
   text-align: center;
@@ -38,72 +23,7 @@ footer {
   margin-top: 20px;
 }
 
-input[type="text"] {
-  width: 100%; /* Donne de la largeur aux champs d'entrée dans la newsletter */
-  padding: 8px;
-  margin-bottom: 10px;
-}
 
 
-/* Contacts logos */
-.myContacts {
-  display: flex;
-  justify-content: center;
-  gap: 2%;
-  align-items: center;
-}
 
-.myContacts img {
-  width: 40px;
-}
-
-h2 {
-  padding: 20px;
-}
-
-.subButton {
-  font-family: Edu AU VIC WA NT Pre, cursive;
-  padding-inline-start: 5px;
-  padding-inline-end: 5px;
-  background-color: #5a5959c5;
-  font-weight: bold;
-  font-size: 17px
-}
-
-
-/* logos reseaux sociaux */
-
-.social-icons{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.social-icons a{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 4rem;
-  height: 4rem;
-  background-color: transparent;
-  border: 0.2rem solid rgb(77, 13, 71);
-  font-size: 2rem;
-  border-radius: 50%;
-  margin: 3rem 1rem 3rem;
-  transition: 0.3s ease;
-}
-
-.social-icons a:hover{
-  color: rgb(211, 211, 211);
-  transform: scale(1.1) translateY(-5px);
-  background-color: rgb(170, 162, 74);
-  box-shadow: 0 10px 10px rgb(85, 21, 74);
-}
-
-.mid-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 

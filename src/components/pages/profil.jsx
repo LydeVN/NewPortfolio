@@ -16,58 +16,85 @@ export default function Profil() {
       {/* ---------- HERO ---------- */}
       <section className="profil-hero" data-aos="fade-down">
         <h1>Mon Profil</h1>
-        <p>Présentation, Parcours, Expériences & Objectifs</p>
+        <p>Développement, créations techniques & exploration du numérique</p>
       </section>
 
-      {/* ---------- CONTENEUR DE CARTES ---------- */}
+      {/* ---------- GRID ---------- */}
       <div className="profil-grid">
 
         {/* ----------- A PROPOS ----------- */}
         <div className="profil-card" data-aos="fade-up">
-          <h2>👤 À propos de moi</h2>
+          <h2>À propos de moi</h2>
           <p>
             Je m'appelle <strong>Jules Vannelli</strong>, étudiant en deuxième année
-            de <strong>BTS SIO option SLAM</strong> et passionné par le
-            développement, la création de projets et l’informatique en général.
+            de <strong>BTS SIO option SLAM</strong>. Je suis passionné par la
+            création de solutions numériques : développement web, applications,
+            outils techniques et scripts spécialisés.
           </p>
           <p>
-            J’aime apprendre, expérimenter et développer des solutions modernes,
-            qu’il s’agisse de sites web, applications, outils techniques ou projets
-            personnels liés au jeu vidéo.
+            Mon objectif est de devenir développeur polyvalent, capable de travailler
+            à la fois sur des applications web, logicielles et des projets techniques
+            plus complexes.
           </p>
         </div>
 
-        {/* ----------- COMPÉTENCES ----------- */}
+        {/* ----------- COMPÉTENCES WEB ----------- */}
         <div className="profil-card" data-aos="fade-up">
-          <h2>⚡ Compétences</h2>
+          <h2>Développement Web</h2>
           <ul className="profil-list">
-            <li>Développement web (HTML, CSS, JavaScript, React)</li>
-            <li>Backend (Node.js, Express)</li>
-            <li>Bases de données (SQL, MariaDB)</li>
-            <li>Git / GitHub — Workflow & sécurité</li>
-            <li>Linux / Serveurs / Administration système</li>
-            <li>Création de projets techniques (mods, outils, scripts)</li>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React.js</li>
+            <li>Node.js / Express</li>
+            <li>API REST</li>
+            <li>Gestion de projets Git / GitHub</li>
+          </ul>
+        </div>
+
+        {/* ----------- COMPÉTENCES LOGICIELLES ----------- */}
+        <div className="profil-card" data-aos="fade-up">
+          <h2>Développement Logiciel</h2>
+          <ul className="profil-list">
+            <li>C# (POO, architecture, bonnes pratiques)</li>
+            <li>WPF (interfaces graphiques modernes)</li>
+            <li>ORM (Entity Framework, migrations, requêtes LINQ)</li>
+            <li>Applications desktop interactives</li>
+          </ul>
+        </div>
+
+        {/* ----------- SCRIPTS & AUTOMATION ----------- */}
+        <div className="profil-card" data-aos="fade-up">
+          <h2>Scripts & Automatisation</h2>
+          <ul className="profil-list">
+            <li>Scripts pour outils personnalisés</li>
+            <li>Automatisation de tâches techniques</li>
+            <li>Scripts pour serveurs / monitoring</li>
+            <li>Modding & outils dans l’écosystème gaming</li>
           </ul>
         </div>
 
         {/* ----------- OBJECTIFS ----------- */}
         <div className="profil-card" data-aos="fade-up">
-          <h2>🎯 Objectifs</h2>
+          <h2>Objectifs</h2>
           <p>
-            Évoluer vers le développement logiciel / full-stack, renforcer mes
-            compétences techniques et concevoir des projets de plus en plus
-            aboutis, innovants et professionnels.
+            Développer davantage mes compétences en <strong>développement logiciel</strong>,
+            approfondir le <strong>C#, les patterns d’architecture</strong> et élargir mes
+            capacités en <strong>applications full-stack</strong>.
+          </p>
+          <p>
+            Je souhaite également poursuivre le développement d’outils techniques
+            avancés liés au jeu vidéo, à l’automatisation et à la création de projets
+            innovants.
           </p>
         </div>
 
         {/* ----------- INTERETS ----------- */}
         <div className="profil-card" data-aos="fade-up">
-          <h2>🎮 Centres d'intérêt</h2>
+          <h2>Centres d'intérêt</h2>
           <ul className="profil-list">
+            <li>Développement d’outils et scripts techniques</li>
+            <li>Modding Minecraft et optimisation serveur</li>
             <li>Jeux vidéo (LoL, Overwatch…) & e-sport</li>
-            <li>Modding Minecraft, optimisation serveur</li>
-            <li>Développement d’outils techniques</li>
-            <li>Exploration des nouvelles technologies</li>
+            <li>Tech, innovation et nouveaux frameworks</li>
           </ul>
         </div>
 

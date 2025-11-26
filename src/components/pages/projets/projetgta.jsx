@@ -3,11 +3,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "../../../assets/maincolors.css";
 import "../../../assets/projets/projetgta.css";
-import screenshot1 from "../../../assets/img/Screenshot_1.png";
+
 
 
 export default function projetGta() {
-  useEffect(() => {
+   // eslint-disable-next-line react-hooks/rules-of-hooks
+   useEffect(() => {
     AOS.init({ duration: 800 });
     document.title = "Projet GTA | Jules Vannelli";
   }, []);
@@ -26,7 +27,7 @@ export default function projetGta() {
 
         {/* ---- CONTEXTE ---- */}
         <div className="project-card" data-aos="fade-up">
-          <h2>🧭 Contexte</h2>
+          <h2>Contexte</h2>
           <p>
             Développé dans le cadre du BTS SIO SLAM, GTA est une application web
             permettant de gérer des tâches, user stories et ressources selon les
@@ -43,7 +44,7 @@ export default function projetGta() {
 
         {/* ---- OBJECTIFS ---- */}
         <div className="project-card" data-aos="fade-up">
-          <h2>🎯 Objectifs</h2>
+          <h2>Objectifs</h2>
           <ul className="project-list">
             <li>CRUD complet (tâches, user stories, ressources)</li>
             <li>Workflow Agile (To Do → In Progress → Review → Done)</li>
@@ -55,7 +56,7 @@ export default function projetGta() {
 
         {/* ---- TRAVAIL RÉALISÉ ---- */}
         <div className="project-card" data-aos="fade-up">
-          <h2>🛠️ Travail réalisé</h2>
+          <h2>Travail réalisé</h2>
           <p>
             Le projet a été conçu selon une démarche complète : MCD/MLD, cahier des
             charges, développement backend (Symfony sans ORM, PDO pur), intégration
@@ -69,7 +70,7 @@ export default function projetGta() {
 
         {/* ---- OUTILS ---- */}
         <div className="project-card" data-aos="fade-up">
-          <h2>🧰 Outils & Technologies</h2>
+          <h2>Outils & Technologies</h2>
           <ul className="project-list">
             <li>PHP 8, Symfony, PDO</li>
             <li>MySQL, phpMyAdmin</li>
@@ -82,7 +83,7 @@ export default function projetGta() {
 
         {/* ---- COMPÉTENCES BTS ---- */}
         <div className="project-card" data-aos="fade-up">
-          <h2>📚 Compétences mobilisées</h2>
+          <h2>Compétences mobilisées</h2>
           <ul className="project-list">
             <li><strong>C1.1.2</strong> – Modélisation MCD/MLD</li>
             <li><strong>C1.2.1</strong> – Conception de solution</li>
@@ -96,7 +97,7 @@ export default function projetGta() {
 
         {/* ---- RÉSULTATS ---- */}
         <div className="project-card" data-aos="fade-up">
-          <h2>📈 Résultats obtenus</h2>
+          <h2>Résultats obtenus</h2>
           <p>
             L’application est pleinement fonctionnelle : CRUD complet, Kanban dynamique,
             authentification, formulaires responsive, et interface sombre propre.
@@ -110,7 +111,7 @@ export default function projetGta() {
 
         {/* ---- BILAN PERSONNEL ---- */}
         <div className="project-card" data-aos="fade-up">
-          <h2>📝 Bilan personnel</h2>
+          <h2>Bilan personnel</h2>
           <p>
             Ce projet m’a permis de comprendre Symfony en profondeur, sans dépendre
             de Doctrine. J’ai gagné en autonomie, en rigueur, et en maîtrise des

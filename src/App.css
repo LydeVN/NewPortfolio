@@ -1,5 +1,4 @@
 @import './assets/maincolors.css';
-
 .App {
   text-align: center;
 }
@@ -45,4 +44,11 @@
 
 main {
   margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding-top: 40%;
+  }
+  
 }

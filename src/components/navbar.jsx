@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../assets/navbar.css";
 import { NavLink } from "react-router-dom";
+import PictureOfMe from "../assets/img/pp.png"
 
 export default function NavBar() {
   const [open, setOpen] = useState(false);
@@ -8,15 +9,22 @@ export default function NavBar() {
   return (
     <header className="neon-header my-theme">
 
-      {/* BARRE SUPERIEURE NEON */}
       <div className="neon-line"></div>
 
       <nav className="navbar">
 
-        {/* Logo (optionnel) */}
-        <div className="nav-logo">JV</div>
+        {/* Burger always present but hidden on desktop */}
+        <div
+          className={`burger ${open ? "active" : ""}`}
+          onClick={() => setOpen(!open)}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
-        {/* Liens */}
+        <div className="nav-logo"><img src={PictureOfMe}></img></div>
+
         <div className={`nav-links ${open ? "open" : ""}`}>
           <NavLink to="/" onClick={() => setOpen(false)}>Home</NavLink>
           <NavLink to="/profil" onClick={() => setOpen(false)}>Profil</NavLink>
@@ -25,13 +33,6 @@ export default function NavBar() {
           <NavLink to="/experiences" onClick={() => setOpen(false)}>Expériences</NavLink>
           <NavLink to="/projetgta" onClick={() => setOpen(false)}>Projets</NavLink>
           <NavLink to="/contact" onClick={() => setOpen(false)}>Contact</NavLink>
-        </div>
-
-        {/* Burger */}
-        <div className={`burger ${open ? "active" : ""}`} onClick={() => setOpen(!open)}>
-          <span></span>
-          <span></span>
-          <span></span>
         </div>
 
       </nav>

@@ -1,410 +1,178 @@
-/* https://uiverse.io/andrew-demchenk0/tasty-yak-79 */
-/* icons : https://lordicon.com/icons/system/regular */
-/* behance or dribbble inspiration de portfolio */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* =========================================================
+   HOME — VERSION NETTOYÉE & COHÉRENTE AVEC LES AUTRES PAGES
+   ========================================================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Karla+Tamil+Upright:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla+Tamil+Upright:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla+Tamil+Upright:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Edu+AU+VIC+WA+NT+Pre&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla+Tamil+Upright:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Oxanium:wght@200..800&family=Rubik+Mono+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap");
-@import '../assets/maincolors.css';
+@import "../assets/maincolors.css";
 
-
-/* * {
-  border: 1px solid red
-} */
-
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* BODY */
 body {
   background-color: var(--bg-color);
-  background-repeat: repeat;
-  background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
+/* MAIN LAYOUT */
 main {
-  padding: 15%;
+  padding: 15% 10%;
+  color: var(--main-text-color);
+  font-family: Poppins, sans-serif;
 }
 
-header {
-  padding: 20px;
-}
-
-/* .active {
-  background-color: rgb(82, 1, 66);
-  border-radius: 6px;
-  position: relative;
-  padding: 1px 10px;
-  color: rgb(255, 255, 255) !important;
-}
-
-
-
-.moov {
-  position: relative;
-  color: rgb(255, 255, 255) !important;
-  align-content: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.moov:hover {
-  animation: normal 1s One;
-  display: flex;
-} */
-
-
-.me {
-  font-size: 3em;
-  font-family: Bebas;
-}
-
-.backtop {
-  text-align: center;
-}
-
-
-
-.devlogo {
-  animation: flotage2 3s infinite;
-  position: relative;
-  margin-top: 100px;
-  height: 100px;
-  width: 100px;
-  margin-left: 80%;
-}
+/* ================================
+   TITRE PRINCIPAL 
+   ================================ */
 
 .nameCenter {
-  display: flex;
   text-align: center;
-  justify-content: center;
-
-  color: white;
-  flex: 1;
-  font-size: 3.5em;
-  font-family: Kanit;
-  position: relative;
-  /* animation: name-flotage 4s infinite; */
-  transition: transform 0.3s ease;
-  margin-bottom: 100px;
-  -webkit-text-stroke: 2px black;
-
-}
-
-.name {
-  padding: 0px 20px;
-  text-align: center;
-  color: rgb(4, 4, 4);
-  font-size: 2em;
-  font-family: Poppins;
-  -webkit-text-stroke: 2px #860779;
-  position: relative;
-  overflow: hidden;
-  /* Cache les parties hors du conteneur */
-  display: inline-block;
-  text-shadow: 3px 3px 10px #860779;
-}
-
-.name::before {
-  content: '';
-  position: absolute;
-  top: 60px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #892cdc;
-  border-radius: 50% 50% 0% 0%;
-  z-index: -1;
-  transition: all .5s;
-  display: none;
-}
-
-.name::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  /* Place le trait en dessous du texte */
-  left: 0;
-  width: 0;
-  /* Initialement, la largeur du trait est 0 */
-  height: 4px;
-  /* Épaisseur du trait */
-  background-color: black;
-  /* Couleur du trait */
-  animation: line-reveal 1s ease-out forwards;
-  /* Animation de la ligne */
-}
-
-.name span {
-  display: inline-block;
-  transform: translateX(-105%);
-  /* Texte hors du conteneur à gauche */
-  animation: text-reveal 1s ease-out forwards;
-  /* Animation du texte */
-  animation-delay: 0.5s;
-  /* Délai après le trait */
-}
-
-/* Animation pour le trait */
-@keyframes line-reveal {
-  to {
-    width: 100%;
-    /* Étend le trait jusqu'à couvrir toute la largeur */
-  }
-}
-
-/* Animation pour le texte */
-@keyframes text-reveal {
-  to {
-    transform: translateX(0);
-    /* Déplace le texte à sa position initiale */
-  }
-}
-
-
-
-.whoami {
-  padding: 10px;
-  font-family: Sofadi One;
-  font-size: 50px;
-  font-weight: bold;
-  text-align: center;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
-a:visited {
-  color: inherit;
-}
-
-
-
-
-
-
-/* todo */
-
-@media only screen and (max-width: 800px) {
-
-  .name {
-    order: 1;
-    text-align: center;
-    margin-left: 0;
-    font-size: 1em;
-  }
-
-  @keyframes top {
-    0% {
-      left: 0px;
-    }
-
-    50% {
-      left: -10px;
-    }
-
-    100% {
-      left: 0px;
-    }
-  }
-}
-
-.imgtest:hover {
-  opacity: 0.5;
-}
-
-img[title] {
-  width: 200px;
-}
-
-/* todo alignement*/
-footer {
-  background-color: rgb(51, 50, 50);
-  text-align: center;
-  padding: 30px;
-  color: white;
-  width: 100%;
-  bottom: 0;
-  text-decoration: bold;
-  margin-top: 200px;
-}
-
-/* Centrer le contenu du footer et ajuster l'espacement des colonnes */
-.footer {
-  display: flex;
-  flex-wrap: wrap;
-  /* Pour permettre aux colonnes de s'ajuster */
-  justify-content: center;
-  /* Centrer horizontalement les colonnes */
-  align-items: flex;
-  /* Aligner les éléments en haut */
-  gap: 10%;
-  /* Espace entre les colonnes */
-  font-family: Kanit;
-}
-
-/* Ajuster les colonnes pour les centrer et les espacer correctement */
-
-
-.col-1,
-.col-2,
-.col-3 {
-  flex: 1 1 1 30%;
-  /* Les colonnes vont occuper 30% de la largeur, mais vont s'ajuster selon l'espace disponible */
-  max-width: 30%;
-  /* Limiter la largeur des colonnes pour éviter qu'elles prennent toute la place */
-}
-
-/* Centrer le texte et autres éléments dans la colonne newsletter */
-.limited {
-  padding-top: 20px;
-  text-align: center;
-  width: 100%;
-  margin-top: 20px;
-}
-
-input[type="text"] {
-  width: 100%;
-  /* Donne de la largeur aux champs d'entrée dans la newsletter */
-  padding: 8px;
-  margin-bottom: 10px;
-}
-
-
-/* Contacts logos */
-.myContacts {
   display: flex;
   justify-content: center;
-  gap: 2%;
-  align-items: center;
+  margin-bottom: 80px;;
 }
 
-.myContacts img {
-  width: 40px;
+.home-title {
+  font-family: Kanit, sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--color-accent-primary);
+  text-shadow: 0 0 10px var(--color-accent-primary);
 }
 
-h2 {
-  padding: 20px;
+.home-subtitle {
+  font-size: 1.3rem;
+  margin-top: 10px;
+  color: var(--color-text-neutral);
 }
 
-.subButton {
-  font-family: Edu AU VIC WA NT Pre, cursive;
-  padding-inline-start: 5px;
-  padding-inline-end: 5px;
-  background-color: #5a5959c5;
-  font-weight: bold;
-  font-size: 17px
-}
-
-
-/* logos reseaux sociaux */
+/* ================================
+   SOCIAL ICONS
+   ================================ */
 
 .social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  gap: 2rem;
 }
 
 .social-icons a {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 0.2rem solid var(--color-accent-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.15) translateY(-5px);
+  background: var(--color-accent-secondary);
+  box-shadow: 0 0 15px var(--color-accent-primary);
+}
+
+/* ================================
+   BOUTON CV 
+   ================================ */
+
+.cssbuttons-io-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 2rem auto;
+  padding: 0.8em 1.5em;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 20em;
+  border: none;
+  color: white;
+  background: linear-gradient(0deg, rgba(77, 54, 208, 1) 0%, rgba(132, 116, 254, 1) 100%);
+  box-shadow: 0 0.7em 1.5em -0.5em rgba(77, 54, 208, 0.6);
+  transition: 0.25s ease;
+}
+
+.cssbuttons-io-button:hover {
+  transform: scale(1.03);
+}
+
+.cssbuttons-io-button:active {
+  transform: scale(0.97);
+}
+
+/* ================================
+   BOUTON PAGE SUIVANTE
+   ================================ */
+
+#next-page-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 8px 20px;
+  font-family: Poppins;
+  border-radius: 6px;
+  font-size: 16px;
+  border: 2px solid var(--color-accent-primary);
+  background: #1c1c1e;
+  color: var(--color-accent-secondary);
+  transition: 0.3s;
+}
+
+#next-page-button:hover {
+  background: var(--color-accent-primary);
+  color: black;
+}
+
+/* ================================
+   RESPONSIVE
+   ================================ */
+
+@media (max-width: 768px) {
+  main {
+    padding: 30% 8%;
+  }
+
+  .home-title {
+    font-size: 2.8rem;
+  }
+
+  .social-icons a {
+    width: 3.2rem;
+    height: 3.2rem;
+    font-size: 1.6rem;
+  }
+}
+
+
+
+
+
+.social-icons a {
+  text-decoration: none;
+}
+
+.social-icons a{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 4rem;
   height: 4rem;
   background-color: transparent;
-  border: 0.2rem solid #902184;
+  border: 0.2rem solid rgb(77, 13, 71);
   font-size: 2rem;
   border-radius: 50%;
   margin: 3rem 1rem 3rem;
   transition: 0.3s ease;
-  color: black;
 }
-
-.social-icons a:hover {
-  color: rgb(211, 211, 211);
-  transform: scale(1.1) translateY(-5px);
-  background-color: #22D3EE;
-  box-shadow: 0 10px 10px #902184;
-}
-
-.mid-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-#next-page-button {
-  font-family: Poppins;
-  position: fixed;
-  bottom: 20px;
-  /* Distance du bas de l'écran */
-  right: 20px;
-  /* Distance du côté droit */
-  padding: 5px 20px;
-  background-color: #2f2f30;
-  /* Couleur de fond */
-  color: var(--color-accent-secondary);
-  /* Couleur du texte */
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  font-size: 16px;
-  transition: background-color 0.4s ease;
-  border: solid 2px var(--color-accent-primary);
-}
-
-#next-page-button:hover {
-  background-color: #a06718;
-  /* Couleur au survol */
-}
-
-/* From Uiverse.io by adamgiebl */ 
-.cssbuttons-io-button {
-  display: flex;
-  align-items: center;
-  font-family: inherit;
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 17px;
-  padding: 0.8em 1.5em 0.8em 1.2em;
-  color: white;
-  background: #ad5389;
-  background: linear-gradient(
-    0deg,
-    rgba(77, 54, 208, 1) 0%,
-    rgba(132, 116, 254, 1) 100%
-  );
-  border: none;
-  box-shadow: 0 0.7em 1.5em -0.5em #4d36d0be;
-  letter-spacing: 0.05em;
-  border-radius: 20em;
-}
-
-.cssbuttons-io-button svg {
-  margin-right: 8px;
-}
-
-.cssbuttons-io-button:hover {
-  box-shadow: 0 0.5em 1.5em -0.5em #4d36d0be;
-}
-
-.cssbuttons-io-button:active {
-  box-shadow: 0 0.3em 1em -0.5em #4d36d0be;
-}
-
-
