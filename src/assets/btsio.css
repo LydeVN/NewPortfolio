@@ -1,12 +1,10 @@
-/* ==========================================
-   PAGE BTS SIO — STYLE IDENTIQUE À PROFIL
-   ========================================== */
-
 .bts-page {
   padding: 10% 12%;
   background-color: var(--bg-color);
   color: var(--main-text-color);
   font-family: Poppins, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* ---------- HERO ---------- */
@@ -45,7 +43,10 @@
   box-shadow: 0 0 20px rgba(217, 70, 239, 0.15);
   transition: 0.3s ease;
   text-align: justify;
+  max-width: 1000px;
+  margin: 0 auto 50px auto; 
 }
+
 
 .bts-card:hover {
   transform: translateY(-6px);

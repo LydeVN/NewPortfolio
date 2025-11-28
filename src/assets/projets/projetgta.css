@@ -93,6 +93,22 @@
   margin-top: 10px;
 }
 
+.anex-screen {
+  margin-top: 100px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(217, 70, 239, 0.2);
+  border-radius: 12px;
+  text-align: center;
+  color: var(--color-text-neutral);
+  font-size: 1.1rem;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 /* --------- RESPONSIVE --------- */
 @media (max-width: 768px) {
   .project-page {

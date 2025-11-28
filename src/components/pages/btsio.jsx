@@ -19,65 +19,86 @@ export default function BtsSio() {
         <p>Services Informatiques aux Organisations</p>
       </section>
 
-      {/* ---------- GRID ---------- */}
+      {/* ---------- INTRO ---------- */}
+      <section className="bts-card" data-aos="fade-up">
+        <h2>Présentation générale</h2>
+        <p>
+          Le <strong>BTS SIO</strong> (Services Informatiques aux Organisations) est une formation
+          professionnalisante de deux ans orientée vers les métiers du numérique, du développement
+          logiciel et de la gestion des systèmes informatiques.
+        </p>
+      </section>
+
+      {/* ---------- ÉTABLISSEMENT ---------- */}
+      <section className="bts-card" data-aos="fade-up">
+        <h2>Mon établissement : Institut Supérieur Saint-Denis</h2>
+        <p>
+          J'étudie à l’<strong>Institut Supérieur Saint-Denis à Annonay</strong>, un établissement reconnu
+          pour son excellence pédagogique, son suivi personnalisé et son engagement vers la réussite
+          professionnelle des étudiants.
+        </p>
+        <ul className="bts-list">
+          <li>Encadrement sérieux et bienveillant</li>
+          <li>Accompagnement à l'alternance et stages</li>
+        </ul>
+      </section>
+
+      {/* ---------- OPTIONS (2 colonnes) ---------- */}
       <div className="bts-grid">
 
-        {/* DESCRIPTION */}
-        <div className="bts-card" data-aos="fade-up">
-          <h2>Qu’est-ce que le BTS SIO ?</h2>
-          <p>
-            Le BTS SIO (Services Informatiques aux Organisations) est une formation
-            en deux ans destinée à former des professionnels capables de gérer,
-            développer et maintenir des solutions informatiques au sein d’une
-            entreprise.
-          </p>
-        </div>
-
-        {/* SISR */}
         <div className="bts-card" data-aos="fade-up">
           <h2>Option SISR</h2>
           <p>
-            L’option <strong>SISR</strong> (Solutions d’Infrastructure, Systèmes et
-            Réseaux) forme aux métiers liés aux réseaux, à la cybersécurité, aux
-            serveurs, à l’administration système et à la gestion d’infrastructures.
+            L'option <strong>SISR</strong> (Solutions d’Infrastructure, Systèmes & Réseaux)
+            forme aux métiers liés :
           </p>
-        </div>
-
-        {/* SLAM */}
-        <div className="bts-card" data-aos="fade-up">
-          <h2>Option SLAM</h2>
-          <p>
-            L’option <strong>SLAM</strong> (Solutions Logicielles et Applications
-            Métiers) prépare aux domaines comme le développement web, la création
-            d’applications, les bases de données ou encore la gestion de projets.
-          </p>
-        </div>
-
-        {/* COMPÉTENCES */}
-        <div className="bts-card" data-aos="fade-up">
-          <h2>Compétences développées</h2>
           <ul className="bts-list">
-            <li>Développement d’applications (web, mobile, logiciels)</li>
-            <li>Gestion de base de données (SQL)</li>
-            <li>Cybersécurité et protection des systèmes</li>
-            <li>Administration de réseaux et serveurs</li>
-            <li>Analyse des besoins d’une organisation</li>
-            <li>Gestion de projets et documentation</li>
+            <li>à l’administration réseau et système</li>
+            <li>à la cybersécurité</li>
+            <li>à la gestion de serveurs</li>
+            <li>au support technique</li>
           </ul>
         </div>
 
-        {/* POURQUOI CE BTS */}
         <div className="bts-card" data-aos="fade-up">
-          <h2>Pourquoi j’ai choisi le BTS SIO ?</h2>
+          <h2>Mon option : SLAM</h2>
           <p>
-            Passionné par le développement et l’informatique depuis longtemps, le
-            BTS SIO m’a offert une formation complète, professionnelle et orientée
-            projet. Mon option <strong>SLAM</strong> me permet aujourd’hui de créer
-            des applications, sites web, outils et projets concrets.
+            L’option <strong>SLAM</strong> (Solutions Logicielles et Applications Métiers) se
+            concentre sur le développement et la création d’applications modernes.
           </p>
+          <ul className="bts-list">
+            <li>Développement Web (React, JavaScript…)</li>
+            <li>Développement logiciel (C#, WPF, ORM)</li>
+            <li>Création d’outils et scripts automatisés</li>
+            <li>Gestion et modélisation de bases de données</li>
+          </ul>
         </div>
 
       </div>
+
+      {/* ---------- COMPÉTENCES ---------- */}
+      <section className="bts-card" data-aos="fade-up">
+        <h2>Compétences développées</h2>
+        <ul className="bts-list">
+          <li>Développement web, mobile et logiciel</li>
+          <li>Script, automatisation et outils techniques</li>
+          <li>Administration systèmes & réseaux</li>
+          <li>Cybersécurité</li>
+          <li>Analyse, conception & documentation</li>
+        </ul>
+      </section>
+
+      {/* ---------- POURQUOI ---------- */}
+      <section className="bts-card" data-aos="fade-up">
+        <h2>Pourquoi avoir choisi le BTS SIO ?</h2>
+        <p>
+          Passionné par l’informatique et la création numérique, ce BTS me permet
+          d’acquérir une base solide et polyvalente dans le domaine du développement.
+          L’option SLAM correspond parfaitement à mon objectif : concevoir des projets,
+          outils, logiciels et expériences de plus en plus aboutis, efficaces et modernes.
+        </p>
+      </section>
+
     </main>
   );
 }
