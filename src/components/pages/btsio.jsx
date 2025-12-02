@@ -23,9 +23,10 @@ export default function BtsSio() {
       <section className="bts-card" data-aos="fade-up">
         <h2>Présentation générale</h2>
         <p>
-          Le <strong>BTS SIO</strong> (Services Informatiques aux Organisations) est une formation
-          professionnalisante de deux ans orientée vers les métiers du numérique, du développement
-          logiciel et de la gestion des systèmes informatiques.
+          Le <strong>BTS SIO</strong> est une formation en deux ans orientée vers les métiers du 
+          numérique, combinant développement logiciel, gestion d’infrastructures et compétences 
+          techniques transversales. Il prépare à une intégration professionnelle rapide dans 
+          le domaine informatique.
         </p>
       </section>
 
@@ -33,58 +34,99 @@ export default function BtsSio() {
       <section className="bts-card" data-aos="fade-up">
         <h2>Mon établissement : Institut Supérieur Saint-Denis</h2>
         <p>
-          J'étudie à l’<strong>Institut Supérieur Saint-Denis à Annonay</strong>, un établissement reconnu
-          pour son excellence pédagogique, son suivi personnalisé et son engagement vers la réussite
-          professionnelle des étudiants.
+          J’étudie à l’<strong>Institut Supérieur Saint-Denis à Annonay</strong>, un établissement
+          reconnu pour son accompagnement individualisé, la qualité des enseignements et la
+          proximité avec les attentes professionnelles du secteur informatique.
         </p>
         <ul className="bts-list">
-          <li>Encadrement sérieux et bienveillant</li>
-          <li>Accompagnement à l'alternance et stages</li>
+          <li>Encadrement attentif et rigoureux</li>
+          <li>Accompagnement sur les stages et projets</li>
         </ul>
       </section>
 
-      {/* ---------- OPTIONS (2 colonnes) ---------- */}
+      {/* ---------- OPTIONS ---------- */}
       <div className="bts-grid">
 
+        {/* --------- SISR --------- */}
         <div className="bts-card" data-aos="fade-up">
           <h2>Option SISR</h2>
           <p>
-            L'option <strong>SISR</strong> (Solutions d’Infrastructure, Systèmes & Réseaux)
-            forme aux métiers liés :
+            L’option <strong>SISR</strong> forme aux métiers de l’administration système et réseau.
           </p>
           <ul className="bts-list">
-            <li>à l’administration réseau et système</li>
-            <li>à la cybersécurité</li>
-            <li>à la gestion de serveurs</li>
-            <li>au support technique</li>
+            <li>Administration de serveurs et réseaux</li>
+            <li>Cybersécurité et protection des systèmes</li>
+            <li>Déploiement d’infrastructures</li>
+            <li>Gestion des incidents et support</li>
           </ul>
         </div>
 
+        {/* --------- SLAM --------- */}
         <div className="bts-card" data-aos="fade-up">
           <h2>Mon option : SLAM</h2>
           <p>
-            L’option <strong>SLAM</strong> (Solutions Logicielles et Applications Métiers) se
-            concentre sur le développement et la création d’applications modernes.
+            L’option <strong>SLAM</strong> est centrée sur le développement d’applications et
+            la gestion des données.
           </p>
           <ul className="bts-list">
-            <li>Développement Web (React, JavaScript…)</li>
+            <li>Développement Web (JavaScript, React, PHP, Symfony)</li>
             <li>Développement logiciel (C#, WPF, ORM)</li>
-            <li>Création d’outils et scripts automatisés</li>
-            <li>Gestion et modélisation de bases de données</li>
+            <li>Scripts & automatisation</li>
+            <li>Modélisation et gestion de bases de données</li>
           </ul>
         </div>
 
       </div>
 
-      {/* ---------- COMPÉTENCES ---------- */}
+      {/* ---------- COMPÉTENCES OFFICIELLES BTS SIO ---------- */}
       <section className="bts-card" data-aos="fade-up">
-        <h2>Compétences développées</h2>
+        <h2>Compétences du BTS SIO</h2>
+        <p>Voici les compétences officielles travaillées durant la formation :</p>
+
         <ul className="bts-list">
-          <li>Développement web, mobile et logiciel</li>
-          <li>Script, automatisation et outils techniques</li>
-          <li>Administration systèmes & réseaux</li>
-          <li>Cybersécurité</li>
-          <li>Analyse, conception & documentation</li>
+
+          {/* ---------------- C1 Gestion du patrimoine ---------------- */}
+          <li>
+            <strong>1. Gérer le patrimoine informatique</strong><br />
+            Référentiels, documentation technique, inventaire, déploiement, sécurité AD, RGPD,
+            contrats, supervision, gestion des sauvegardes.
+          </li>
+
+          {/* ---------------- C2 Support ---------------- */}
+          <li>
+            <strong>2. Répondre aux incidents & demandes d’assistance</strong><br />
+            Support utilisateurs, base de connaissances, ITIL, diagnostic, traitement d’incidents,
+            documentation.
+          </li>
+
+          {/* ---------------- C3 Présence en ligne ---------------- */}
+          <li>
+            <strong>3. Développer la présence en ligne de l'organisation</strong><br />
+            Création et gestion de sites web, SEO, e-réputation, réseaux sociaux, gestion des données
+            personnelles, nom de domaine.
+          </li>
+
+          {/* ---------------- C4 Travail en mode projet ---------------- */}
+          <li>
+            <strong>4. Travailler en mode projet</strong><br />
+            Analyse des besoins, organisation de projet, méthodes (V, Agile), planification, 
+            indicateurs de suivi et gestion des écarts.
+          </li>
+
+          {/* ---------------- C5 Mise à disposition d’un service ---------------- */}
+          <li>
+            <strong>5. Mettre à disposition un service informatique</strong><br />
+            Tests unitaires, intégration, production, déploiement, documentation utilisateur, 
+            formation et accompagnement.
+          </li>
+
+          {/* ---------------- C6 Développement professionnel ---------------- */}
+          <li>
+            <strong>6. Organiser son développement professionnel</strong><br />
+            Veille technologique, stratégies d’amélioration continue, construction de son 
+            projet professionnel.
+          </li>
+
         </ul>
       </section>
 
@@ -92,10 +134,10 @@ export default function BtsSio() {
       <section className="bts-card" data-aos="fade-up">
         <h2>Pourquoi avoir choisi le BTS SIO ?</h2>
         <p>
-          Passionné par l’informatique et la création numérique, ce BTS me permet
-          d’acquérir une base solide et polyvalente dans le domaine du développement.
-          L’option SLAM correspond parfaitement à mon objectif : concevoir des projets,
-          outils, logiciels et expériences de plus en plus aboutis, efficaces et modernes.
+          Passionné par l’informatique, j’ai choisi ce BTS car il offre une formation technique
+          complète et polyvalente. L’option SLAM me permet de développer des compétences solides
+          en programmation, création d’applications et conception de solutions adaptées aux besoins
+          professionnels.
         </p>
       </section>
 
