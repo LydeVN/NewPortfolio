@@ -74,17 +74,17 @@
     font-size: 1.1rem;
     position: relative;
     transition: 0.5s ease;
-    background-color: #4C205C;
+    /* background-color: #4C205C; */
     padding: 5px 10px;
     border-radius: 10px;
 }
 
 .nav-links a:visited {
-    color: white !important;
+    color : white;
 }
 
 .nav-links a:hover {
-    background-color: #562568;
+    color: #7e06aa !important;
 }
 
 .nav-links a::after {
