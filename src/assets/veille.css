@@ -82,6 +82,7 @@
     box-shadow: 0 0 20px rgba(217,70,239,0.25);
     backdrop-filter: blur(10px);
     transition: 0.3s ease;
+    max-height:fit-content;
 }
 
 .veille-card:hover {
