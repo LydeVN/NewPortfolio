@@ -23,7 +23,7 @@ export default function NavBar() {
           <span></span>
         </div>
 
-        <div className="nav-logo"><img src={PictureOfMe}></img></div>
+        <div className="nav-logo"><a href="/"><img src={PictureOfMe}></img></a></div>
 
         <div className={`nav-links ${open ? "open" : ""}`}>
           <NavLink to="/" onClick={() => setOpen(false)}>Home</NavLink>
