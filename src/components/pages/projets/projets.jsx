@@ -83,6 +83,7 @@ export default function Projects() {
                 {/* <div className="media-box">Écran #3</div> */}
               </div>
             </div>
+            <p>1 - Écran de la page des centres Handi’Chiens</p>
           </article>
         </div>
       </section>
