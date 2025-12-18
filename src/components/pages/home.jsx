@@ -5,6 +5,7 @@ import "../../assets/maincolors.css";
 import "../../assets/home.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { NavLink } from "react-router-dom";
+import me from "../../assets/img/me.jpg";
 
 export default function Home() {
 
@@ -18,6 +19,7 @@ export default function Home() {
 
       {/* --- TITRE --- */}
       <section className="home-hero" data-aos="fade-down">
+        <img src={me} alt="Portrait de Jules Vannelli" className="home-portrait" />
         <h1 className="home-title">Jules Vannelli</h1>
         <p className="home-subtitle">Développeur & passionné d'informatique</p>
       </section>

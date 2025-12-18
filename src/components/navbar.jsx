@@ -31,7 +31,7 @@ export default function NavBar() {
           <NavLink to="/bts_sio" onClick={() => setOpen(false)}>BTS SIO</NavLink>
           <NavLink to="/veille" onClick={() => setOpen(false)}>Veille</NavLink>
           <NavLink to="/experiences" onClick={() => setOpen(false)}>Expériences</NavLink>
-          <NavLink to="/projetgta" onClick={() => setOpen(false)}>Projets</NavLink>
+          <NavLink to="/projets" onClick={() => setOpen(false)}>Projets</NavLink>
           <NavLink to="/contact" onClick={() => setOpen(false)}>Contact</NavLink>
         </div>
 

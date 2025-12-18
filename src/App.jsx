@@ -4,7 +4,7 @@ import NavBar from './components/navbar';
 import Home from './components/pages/home';
 import Profil from './components/pages/profil';
 import BtsSio from './components/pages/btsio';
-import ProjetGta from './components/pages/projets/projetgta';
+import Projets from './components/pages/projets/projets';
 import Contact from './components/pages/contact';
 import Veille from './components/pages/veille';
 import './index.css'
@@ -30,7 +30,7 @@ function App() {
         <Route path="/bts_sio" element={<BtsSio />} />
         <Route path="/veille" element={<Veille />} />
         {/* <Route path="/experiences" element={<Experiences />} /> */}
-        <Route path="/projetgta" element={<ProjetGta />} />
+        <Route path="/projets" element={<Projets />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       {/* <Footer /> */}

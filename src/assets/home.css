@@ -23,7 +23,7 @@ body {
 
 /* MAIN LAYOUT */
 main {
-  padding: 15% 10%;
+  padding: 10% 10%;
   color: var(--main-text-color);
   font-family: Poppins, sans-serif;
 }
@@ -31,6 +31,14 @@ main {
 /* ================================
    TITRE PRINCIPAL 
    ================================ */
+
+.home-portrait {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 40px;
+}
 
 .nameCenter {
   text-align: center;
