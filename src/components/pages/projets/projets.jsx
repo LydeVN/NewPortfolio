@@ -20,72 +20,6 @@ export default function Projects() {
       </section>
 
       {/* =========================
-          PROJET GTA
-      ========================== */}
-      <section className="project-wrap" data-aos="fade-up">
-        <header className="project-head">
-          <h2>GTA — Gestion de Tâches Agile</h2>
-          <p className="project-sub">
-            Application web inspirée de Scrum / Agile (Kanban, CRUD, rôles)
-          </p>
-        </header>
-
-        <div className="project-body">
-          <article className="project-step" data-aos="fade-up">
-            <h3>Contexte</h3>
-            <p>
-              GTA est une application web développée dans le cadre du BTS SIO SLAM,
-              à l’Institut Supérieur Saint-Denis (Annonay). L’objectif : créer un outil
-              de gestion Agile avec un tableau Kanban.
-            </p>
-          </article>
-
-          <article className="project-step" data-aos="fade-up">
-            <h3>Objectifs</h3>
-            <ul className="project-list">
-              <li>CRUD complet (tâches, user stories, ressources)</li>
-              <li>Kanban dynamique (drag & drop)</li>
-              <li>Authentification et rôles utilisateurs</li>
-              <li>Architecture MVC (Symfony)</li>
-              <li>MLD / persistance SQL via PDO</li>
-            </ul>
-          </article>
-
-          <article className="project-step" data-aos="fade-up">
-            <h3>Travail réalisé</h3>
-            <p>
-              Backend Symfony en PHP orienté objet avec requêtes PDO (sans ORM) + templates Twig.
-              Le Kanban est géré en JavaScript pur via l’API drag & drop.
-            </p>
-          </article>
-
-          <article className="project-step" data-aos="fade-up">
-            <h3>Compétences BTS mobilisées</h3>
-            <ul className="project-list">
-              <li><strong>C1</strong> – Modélisation MCD / MLD</li>
-              <li><strong>C1</strong> – Conception de solution</li>
-              <li><strong>C1</strong> – Développement métier</li>
-              <li><strong>C1</strong> – Persistance des données</li>
-              <li><strong>C3</strong> – Interface utilisateur</li>
-              <li><strong>C5</strong> – Tests / Validation</li>
-            </ul>
-          </article>
-
-          <article className="project-step project-media" data-aos="fade-up">
-            <h3>Screenshots</h3>
-            <div className="media-placeholder">
-              <p>📸 Ajoute ici un carrousel / grid de captures pour GTA</p>
-              <div className="media-row">
-                <div className="media-box">Screenshot #1</div>
-                <div className="media-box">Screenshot #2</div>
-                <div className="media-box">Screenshot #3</div>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      {/* =========================
           PROJET HANDI’CHIENS
       ========================== */}
       <section className="project-wrap" data-aos="fade-up">
@@ -147,6 +81,72 @@ export default function Projects() {
                 </div>
                 {/* <div className="media-box">Écran #2</div> */}
                 {/* <div className="media-box">Écran #3</div> */}
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      {/* =========================
+          PROJET GTA
+      ========================== */}
+      <section className="project-wrap" data-aos="fade-up">
+        <header className="project-head">
+          <h2>GTA — Gestion de Tâches Agile</h2>
+          <p className="project-sub">
+            Application web inspirée de Scrum / Agile (Kanban, CRUD, rôles)
+          </p>
+        </header>
+
+        <div className="project-body">
+          <article className="project-step" data-aos="fade-up">
+            <h3>Contexte</h3>
+            <p>
+              GTA est une application web développée dans le cadre du BTS SIO SLAM,
+              à l’Institut Supérieur Saint-Denis (Annonay). L’objectif : créer un outil
+              de gestion Agile avec un tableau Kanban.
+            </p>
+          </article>
+
+          <article className="project-step" data-aos="fade-up">
+            <h3>Objectifs</h3>
+            <ul className="project-list">
+              <li>CRUD complet (tâches, user stories, ressources)</li>
+              <li>Kanban dynamique (drag & drop)</li>
+              <li>Authentification et rôles utilisateurs</li>
+              <li>Architecture MVC (Symfony)</li>
+              <li>MLD / persistance SQL via PDO</li>
+            </ul>
+          </article>
+
+          <article className="project-step" data-aos="fade-up">
+            <h3>Travail réalisé</h3>
+            <p>
+              Backend Symfony en PHP orienté objet avec requêtes PDO (sans ORM) + templates Twig.
+              Le Kanban est géré en JavaScript pur via l’API drag & drop.
+            </p>
+          </article>
+
+          <article className="project-step" data-aos="fade-up">
+            <h3>Compétences BTS mobilisées</h3>
+            <ul className="project-list">
+              <li><strong>C1</strong> – Modélisation MCD / MLD</li>
+              <li><strong>C1</strong> – Conception de solution</li>
+              <li><strong>C1</strong> – Développement métier</li>
+              <li><strong>C1</strong> – Persistance des données</li>
+              <li><strong>C3</strong> – Interface utilisateur</li>
+              <li><strong>C5</strong> – Tests / Validation</li>
+            </ul>
+          </article>
+
+          <article className="project-step project-media" data-aos="fade-up">
+            <h3>Screenshots</h3>
+            <div className="media-placeholder">
+              <p>📸 Ajoute ici un carrousel / grid de captures pour GTA</p>
+              <div className="media-row">
+                <div className="media-box">Screenshot #1</div>
+                <div className="media-box">Screenshot #2</div>
+                <div className="media-box">Screenshot #3</div>
               </div>
             </div>
           </article>
