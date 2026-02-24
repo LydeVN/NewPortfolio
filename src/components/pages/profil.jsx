@@ -99,6 +99,112 @@ export default function Profil() {
         </div>
 
       </div>
+      {/* BARRE DE SÉPARATION */}
+      {/* <div className="profil-divider" data-aos="zoom-in"></div> */}
+      {/* ----------- PARCOURS SCOLAIRE & PRO ----------- */}
+            <div className="monParcours">
+      <section className="profil-section-full" data-aos="fade-up">
+        <h2 className="section-title">Mon Parcours scolaire</h2>
+        <div className="timeline">
+
+          {/* Expérience 1 */}
+          <div className="timeline-item">
+            <div className="timeline-dot"></div>
+            <div className="timeline-content">
+              <span>2024 - Présent</span>
+              <h3>BTS SIO (Option SLAM)</h3>
+              <p>Expertise en solutions logicielles et applications métiers. Apprentissage approfondi du C#, du développement Web et de la gestion de projets SI.</p>
+            </div>
+          </div>
+
+          {/* Expérience 2 */}
+          <div className="timeline-item">
+            <div className="timeline-dot"></div>
+            <div className="timeline-content">
+              <span>2023 - 2024</span>
+              <h3>1ère année Licence Art du spectacle | Grenoble</h3>
+              <p>Spécialité cinéma</p>
+            </div>
+          </div>
+
+          {/* Expérience 3 */}
+          <div className="timeline-item">
+            <div className="timeline-dot"></div>
+            <div className="timeline-content">
+              <span>2022 - 2023</span>
+              <h3>1 année Licence de Droit | Valence</h3>
+              <p>Etude du droit visant à aquérir une connaissance approfondie des fondements juridiques et des principes de la justice française et intérnationnale.</p>
+            </div>
+          </div>
+
+          {/* Expérience 3 */}
+          <div className="timeline-item">
+            <div className="timeline-dot"></div>
+            <div className="timeline-content">
+              <span>2022</span>
+              <h3>Baccalauréat général - Spécialités Sciences Economiques et Sociales, Histoire Géo - Géopolotique et Sciences Politiques</h3>
+              <p></p>
+            </div>
+          </div>
+
+          {/* Ajoute d'autres étapes ici (Stages, jobs, etc.) */}
+
+        </div>
+      </section>
+
+
+      {/* BARRE DE SÉPARATION */}
+      {/* <div className="profil-divider" data-aos="zoom-in"></div> */}
+        {/* ----------- PARCOURS SCOLAIRE & PRO ----------- */}
+        <section className="profil-section-full" data-aos="fade-up">
+          <h2 className="section-title">Mon Parcours Pro</h2>
+          <div className="timeline">
+
+            {/* Expérience 1 */}
+            <div className="timeline-item">
+              <div className="timeline-dot"></div>
+              <div className="timeline-content">
+                <span>2024 - Présent</span>
+                <h3>BTS SIO (Option SLAM)</h3>
+                <p>Expertise en solutions logicielles et applications métiers. Apprentissage approfondi du C#, du développement Web et de la gestion de projets SI.</p>
+              </div>
+            </div>
+
+            {/* Expérience 2 */}
+            <div className="timeline-item">
+              <div className="timeline-dot"></div>
+              <div className="timeline-content">
+                <span>2023 - 2024</span>
+                <h3>1ère année Licence Art du spectacle | Grenoble</h3>
+                <p>Spécialité cinéma</p>
+              </div>
+            </div>
+
+            {/* Expérience 3 */}
+            <div className="timeline-item">
+              <div className="timeline-dot"></div>
+              <div className="timeline-content">
+                <span>2022 - 2023</span>
+                <h3>1 année Licence de Droit | Valence</h3>
+                <p>Etude du droit visant à aquérir une connaissance approfondie des fondements juridiques et des principes de la justice française et intérnationnale.</p>
+              </div>
+            </div>
+
+            {/* Expérience 3 */}
+            <div className="timeline-item">
+              <div className="timeline-dot"></div>
+              <div className="timeline-content">
+                <span>2022</span>
+                <h3>Baccalauréat général - Spécialités Sciences Economiques et Sociales, Histoire Géo - Géopolotique et Sciences Politiques</h3>
+                <p></p>
+              </div>
+            </div>
+
+            {/* Ajoute d'autres étapes ici (Stages, jobs, etc.) */}
+
+          </div>
+        </section>
+      </div>
     </main>
   );
 }
