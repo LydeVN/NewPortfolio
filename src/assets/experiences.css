@@ -1,0 +1,86 @@
+/* --- Styles spécifiques aux Stages --- */
+
+.badge-stage {
+    background: var(--color-accent-primary);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px var(--color-accent-primary);
+}
+
+.stage-edf {
+    /* On change légèrement la bordure pour marquer la différence avec un projet scolaire */
+    border-color: rgba(70, 130, 239, 0.4); 
+    box-shadow: 0 0 25px rgba(70, 130, 239, 0.15);
+}
+
+.stage-edf .project-head h2 {
+    color: #4682ef; /* Un bleu EDF pour le titre */
+    text-shadow: 0 0 10px rgba(70, 130, 239, 0.5);
+}
+
+.stage-edf .project-step {
+    border-left-color: #4682ef;
+}
+
+/* Container pour les tags de compétences */
+.skills-tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.skill-tag {
+    background: rgba(70, 130, 239, 0.1);
+    border: 1px solid rgba(70, 130, 239, 0.4);
+    color: #a5c5ff;
+    padding: 5px 15px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.skill-tag:hover {
+    background: rgba(70, 130, 239, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Ajustement pour les listes dans les étapes de stage */
+.stage-edf .project-list li {
+    margin-bottom: 8px;
+    color: var(--color-text-neutral);
+}
+
+.stage-edf .project-list li strong {
+    color: #4682ef;
+}
+
+/* Badge pour différencier les stages des projets */
+.stage-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  background: rgba(217, 70, 239, 0.1);
+  border: 1px solid var(--color-accent-primary);
+  color: var(--color-accent-primary);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Optionnel : Une légère teinte bleue pour le stage EDF si tu veux varier du rose */
+.stage-edf-theme {
+  border-color: rgba(70, 131, 239, 0.22);
+  box-shadow: 0 0 25px rgba(70, 131, 239, 0.12);
+}

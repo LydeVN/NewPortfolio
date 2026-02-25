@@ -7,6 +7,7 @@ import BtsSio from './components/pages/btsio';
 import Projets from './components/pages/projets/projets';
 import Contact from './components/pages/contact';
 import Veille from './components/pages/veille';
+import Experiences from './components/pages/experiences';
 import './index.css'
 import Footer from './components/footer';
 import { Analytics } from "@vercel/analytics/react"
@@ -29,7 +30,7 @@ function App() {
         <Route path="/profil" element={<Profil />} />
         <Route path="/bts_sio" element={<BtsSio />} />
         <Route path="/veille" element={<Veille />} />
-        {/* <Route path="/experiences" element={<Experiences />} /> */}
+        <Route path="/experiences" element={<Experiences />} />
         <Route path="/projets" element={<Projets />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
