@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "../../assets/maincolors.css";
 import "../../assets/experiences.css";
+import BadUsbImg from "../../assets/img/screenBadUsb.png";
 
 export default function Experiences() {
   useEffect(() => {
@@ -60,7 +61,8 @@ export default function Experiences() {
             <div className="media-placeholder">
               <div className="media-row">
                 <div className="media-box2">
-                  <p>Screenshot du code Arduino / Photos du site (EPI)</p>
+                  {/* <p>Screenshot du code Arduino / Photos du site (EPI)</p> */}
+                  <img src={BadUsbImg} alt="Screenshot du début du script badUSB" />
                 </div>
               </div>
             </div>

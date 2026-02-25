@@ -164,7 +164,7 @@ export default function Profil() {
             <div className="timeline-item">
               <div className="timeline-dot"></div>
               <div className="timeline-content">
-                <span>2024 - Présent</span>
+                <span>Janvier 2026</span>
                 <h3>Stage de 2ème année de BTS SIO | EDF, Flamanville</h3>
                 <p>Stage de fin d'études en entreprise. J'ai pu découvrir les métiers de l'énergie et de l'ingénierie dans un environnement professionnel. J'ai participé à des projets d'automatisation et de maintenance de systèmes informatiques. Ainsi que des scripts PowerShell de démonstration de cyber-attaque et des scripts VBA.</p>
               </div>
@@ -174,7 +174,7 @@ export default function Profil() {
             <div className="timeline-item">
               <div className="timeline-dot"></div>
               <div className="timeline-content">
-                <span>2023 - 2024</span>
+                <span>Mai - Juin 2025</span>
                 <h3>Stage de 1ère année de BTS SIO | Dev-Id, Marseille</h3>
                 <p>J'ai pu découvrir tous les aspects du développement logiciel et de la gestion de projets informatiques dans un environnement professionnel. J'étais principalement sur du développement de jeux vidéos via Unity.</p>
               </div>
@@ -184,7 +184,7 @@ export default function Profil() {
             <div className="timeline-item">
               <div className="timeline-dot"></div>
               <div className="timeline-content">
-                <span>2022 - 2023</span>
+                <span>Juillet 2023</span>
                 <h3>Stage de un mois dans une association | Au Panier Solidaire, Roubaix</h3>
                 <p>Travail en autonomie, gestion de la logistique et de la distribution des produits alimentaires à destination des personnes en difficulté.J'étais principalement en charge de la réception et du tri des produits.</p>
               </div>
