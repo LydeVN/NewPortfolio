@@ -75,7 +75,6 @@ export default function Projects() {
           <article className="project-step project-media" data-aos="fade-up">
             <h3>Screenshots</h3>
             <div className="media-placeholder">
-              <p>📸 Ajoute ici un carrousel / grid de captures pour GTA</p>
               <div className="media-row">
                 <div className="media-box2"><img src={gtaImg1} alt="Screenshot GTA" /></div>
                 <div className="media-box2">Screenshot #2</div>

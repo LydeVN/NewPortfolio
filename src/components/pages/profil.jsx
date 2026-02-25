@@ -92,8 +92,8 @@ export default function Profil() {
           <h2>Centres d'intérêt</h2>
           <ul className="profil-list">
             <li>Développement d’outils et scripts techniques</li>
-            <li>Modding Minecraft et optimisation serveur</li>
-            <li>Jeux vidéo (LoL, Overwatch…) & e-sport</li>
+            <li>Manipulations serveur</li>
+            <li>Jeux vidéo (LoL, Valorant) & e-sport</li>
             <li>Tech, innovation et nouveaux frameworks</li>
           </ul>
         </div>
@@ -123,7 +123,7 @@ export default function Profil() {
             <div className="timeline-content">
               <span>2023 - 2024</span>
               <h3>1ère année Licence Art du spectacle | Grenoble</h3>
-              <p>Spécialité cinéma</p>
+              <p>Spécialité cinéma, j'ai découvert les bases du cinéma, son histoire et ses techniques de production.</p>
             </div>
           </div>
 
@@ -165,8 +165,8 @@ export default function Profil() {
               <div className="timeline-dot"></div>
               <div className="timeline-content">
                 <span>2024 - Présent</span>
-                <h3>BTS SIO (Option SLAM)</h3>
-                <p>Expertise en solutions logicielles et applications métiers. Apprentissage approfondi du C#, du développement Web et de la gestion de projets SI.</p>
+                <h3>Stage de 2ème année de BTS SIO | EDF, Flamanville</h3>
+                <p>Stage de fin d'études en entreprise. J'ai pu découvrir les métiers de l'énergie et de l'ingénierie dans un environnement professionnel. J'ai participé à des projets d'automatisation et de maintenance de systèmes informatiques. Ainsi que des scripts PowerShell de démonstration de cyber-attaque et des scripts VBA.</p>
               </div>
             </div>
 
@@ -175,8 +175,8 @@ export default function Profil() {
               <div className="timeline-dot"></div>
               <div className="timeline-content">
                 <span>2023 - 2024</span>
-                <h3>1ère année Licence Art du spectacle | Grenoble</h3>
-                <p>Spécialité cinéma</p>
+                <h3>Stage de 1ère année de BTS SIO | Dev-Id, Marseille</h3>
+                <p>J'ai pu découvrir tous les aspects du développement logiciel et de la gestion de projets informatiques dans un environnement professionnel. J'étais principalement sur du développement de jeux vidéos via Unity.</p>
               </div>
             </div>
 
@@ -185,8 +185,8 @@ export default function Profil() {
               <div className="timeline-dot"></div>
               <div className="timeline-content">
                 <span>2022 - 2023</span>
-                <h3>1 année Licence de Droit | Valence</h3>
-                <p>Etude du droit visant à aquérir une connaissance approfondie des fondements juridiques et des principes de la justice française et intérnationnale.</p>
+                <h3>Stage de un mois dans une association | Au Panier Solidaire, Roubaix</h3>
+                <p>Travail en autonomie, gestion de la logistique et de la distribution des produits alimentaires à destination des personnes en difficulté.J'étais principalement en charge de la réception et du tri des produits.</p>
               </div>
             </div>
 
@@ -195,8 +195,8 @@ export default function Profil() {
               <div className="timeline-dot"></div>
               <div className="timeline-content">
                 <span>2022</span>
-                <h3>Baccalauréat général - Spécialités Sciences Economiques et Sociales, Histoire Géo - Géopolotique et Sciences Politiques</h3>
-                <p></p>
+                <h3>Stage de troisième en grande surface Super U</h3>
+                <p>En charge de la gestion des stocks et de l'organisation des rayons. mes taches étaient variées et exigeantes.</p>
               </div>
             </div>
 
