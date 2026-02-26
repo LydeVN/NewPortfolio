@@ -46,7 +46,7 @@ export default function Profil() {
         <div className="profil-card" data-aos="fade-up" data-aos-delay="100">
           <h2>Architecte & Artisan</h2>
           <p>
-            J'aime autant découvrir de nouveaux horizons comme{" "}
+            J'aime autant découvrir de nouvelles technos comme{" "}
             <strong>Docker</strong> ou <strong>Vite</strong> que bâtir des
             architectures solides. Mon propre serveur est mon laboratoire où je
             teste, casse et reconstruis pour mieux apprendre.
@@ -134,7 +134,7 @@ export default function Profil() {
           <p>
             Côté stratégie, je suis un grand amateur d'<strong>échecs</strong>,
             un jeu qui m'apprend la patience et l'anticipation. Et bien sûr, je
-            n'oublie de rester dans le cliché du nerd : entre deux parties sur{" "}
+            n'oublie pas de rester dans le cliché du nerd : entre deux parties sur{" "}
             <strong>Valorant</strong> ou <strong>LoL</strong>, je reste un fan
             inconditionnel de l'univers <strong>Star Wars</strong> et de
             l'esthétique de <strong>Cyberpunk 2077</strong>.
