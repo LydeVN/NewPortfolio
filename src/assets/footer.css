@@ -79,6 +79,10 @@ footer {
   transition: color 0.3s ease;
 }
 
+.footer-nav a i:hover, .footer-nav a i.active {
+  color: var(--accent-color);
+}
+
 .footer-nav a {
   text-decoration: none;
   color: #ccc;
