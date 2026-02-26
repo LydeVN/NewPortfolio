@@ -7,7 +7,7 @@ import "../../assets/profil.css";
 export default function Profil() {
   useEffect(() => {
     AOS.init({ duration: 800 });
-    document.title = "Profile | Jules Vannelli";
+    document.title = "Profil | Jules Vannelli";
   }, []);
 
   return (
@@ -63,8 +63,8 @@ export default function Profil() {
           <p>
             Le stream est mon espace de partage. Je développe mes propres{" "}
             <strong>solutions de diffusion</strong> et outils vidéo
-            personnalisés pour transformer mes passions en
-            expériences interactives uniques.
+            personnalisés pour transformer mes passions en expériences
+            interactives uniques.
           </p>
           <div className="vibe-tags">
             <span>Partage</span>
@@ -143,9 +143,11 @@ export default function Profil() {
             <span>Créatif</span>
             <span>Rêveur</span>
             <span>Santé</span>
+            <span>Curieux</span>
             <span>Échecs</span>
             <span>CD Projekt</span>
             <span>Riot</span>
+            <span>Star Wars</span>
           </div>
         </div>
       </div>
@@ -203,10 +205,14 @@ export default function Profil() {
               <div className="timeline-content">
                 <span>2022</span>
                 <h3>
-                  Baccalauréat général - SES et HGGSP (option DGEMC) | Pierrelatte
+                  Baccalauréat général - SES et HGGSP (option DGEMC) |
+                  Pierrelatte
                 </h3>
-                <p>avec les spécialités Sciences Economiques et
-                  Sociales, Histoire Géo - Géopolitique et Sciences Politiques, j'ai pu développer une solide base en analyse économique et politique.</p>
+                <p>
+                  avec les spécialités Sciences Economiques et Sociales,
+                  Histoire Géo - Géopolitique et Sciences Politiques, j'ai pu
+                  développer une solide base en analyse économique et politique.
+                </p>
               </div>
             </div>
 

@@ -8,7 +8,7 @@ import BtsSio from "./components/pages/btsio";
 import ProjectsMenu from "./components/pages/projets/ProjectsMenu";
 import ProjectsScolaires from "./components/pages/projets/ProjectsScolaires";
 import ProjectsPPE from "./components/pages/projets/ProjectsPPE";
-// import ProjectsPerso from "./components/pages/projets/ProjectsPerso";
+import ProjectsPerso from "./components/pages/projets/ProjectsPerso";
 
 import Contact from "./components/pages/contact";
 import Veille from "./components/pages/veille";
@@ -38,7 +38,7 @@ function App() {
         <Route path="/projets" element={<ProjectsMenu />} />
         <Route path="/projets/scolaires" element={<ProjectsScolaires />} />
         <Route path="/projets/ppe" element={<ProjectsPPE />} />
-        {/* <Route path="/projets/perso" element={<ProjectsPerso />} /> */}
+        <Route path="/projets/perso" element={<ProjectsPerso />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       {/* <Footer /> */}

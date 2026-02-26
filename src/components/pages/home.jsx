@@ -24,7 +24,7 @@ export default function Home() {
           className="home-portrait"
         />
         <h1 className="home-title">Jules Vannelli</h1>
-        <p className="home-subtitle">Développeur & passionné d'informatique</p>
+        <div className="home-subtitle">Développeur & passionné d'informatique</div>
       </section>
 
       {/* --- SOCIAL --- */}
