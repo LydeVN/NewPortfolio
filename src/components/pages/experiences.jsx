@@ -76,7 +76,7 @@ export default function Experiences() {
       <section className="project-wrap" data-aos="fade-up">
         <header className="project-head">
           <span className="stage-badge">Stage de 1ère année</span>
-          <h2>[Nom de l'entreprise]</h2>
+          <h2>[Nom de l'etreprise]</h2>
           <p className="project-sub">Description courte du stage</p>
         </header>
 

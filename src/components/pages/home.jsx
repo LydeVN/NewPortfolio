@@ -6,9 +6,9 @@ import "../../assets/home.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { NavLink } from "react-router-dom";
 import me from "../../assets/img/me.jpg";
+import CV from "../../docs/CV_JulesVannelli.pdf";
 
 export default function Home() {
-
   useEffect(() => {
     AOS.init({ duration: 800 });
     document.title = "Home | Jules Vannelli";
@@ -16,10 +16,13 @@ export default function Home() {
 
   return (
     <main className="home-page my-theme">
-
       {/* --- TITRE --- */}
       <section className="home-hero" data-aos="fade-down">
-        <img src={me} alt="Portrait de Jules Vannelli" className="home-portrait" />
+        <img
+          src={me}
+          alt="Portrait de Jules Vannelli"
+          className="home-portrait"
+        />
         <h1 className="home-title">Jules Vannelli</h1>
         <p className="home-subtitle">Développeur & passionné d'informatique</p>
       </section>
@@ -27,21 +30,48 @@ export default function Home() {
       {/* --- SOCIAL --- */}
       <section className="mid-container" data-aos="fade-up">
         <div className="social-icons">
-          <a href="https://www.instagram.com/jules.vnl/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.instagram.com/jules.vnl/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fa-brands fa-instagram"></i>
           </a>
 
-          <a href="https://x.com/LydeVN" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://x.com/LydeVN"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fa-brands fa-twitter"></i>
           </a>
 
-          <a href="https://www.github.com/LydeVN" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.github.com/LydeVN"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fa-brands fa-github"></i>
           </a>
-        </div>
 
+          <a
+            href="https://www.linkedin.com/in/jules-van-253830318/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
         {/* --- BOUTON CV --- */}
-        <button className="cssbuttons-io-button">
+        <button
+          className="cssbuttons-io-button"
+          onClick={() => {
+            const link = document.createElement("a");
+            link.href = CV;
+            link.download = "CV_JulesVannelli.pdf";
+            link.click();
+          }}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -62,7 +92,6 @@ export default function Home() {
           <button id="next-page-button">Page suivante</button>
         </NavLink> */}
       </section>
-
     </main>
   );
 }

@@ -11,7 +11,7 @@ const Footer = () => {
       
 
       <div className="limited">
-        <p>© 2024 Jules Vannelli. Tous droits réservés.</p>
+        <p>© 2026 Jules Vannelli. Tous droits réservés.</p>
       </div>
       </div>
     </footer>

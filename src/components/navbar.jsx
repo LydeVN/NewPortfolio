@@ -55,7 +55,7 @@ export default function NavBar() {
               Home
             </NavLink>
             <NavLink to="/profil" onClick={() => setOpen(false)}>
-              Profil
+              Profile
             </NavLink>
             <NavLink to="/bts_sio" onClick={() => setOpen(false)}>
               BTS SIO
@@ -66,7 +66,7 @@ export default function NavBar() {
             <NavLink to="/experiences" onClick={() => setOpen(false)}>
               Expériences
             </NavLink>
-            <NavLink to="/projets" onClick={() => setOpen(false)}>
+            <NavLink to="/Projets" onClick={() => setOpen(false)}>
               Projets
             </NavLink>
             <NavLink to="/contact" onClick={() => setOpen(false)}>

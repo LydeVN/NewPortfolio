@@ -7,7 +7,7 @@ import "../../assets/profil.css";
 export default function Profil() {
   useEffect(() => {
     AOS.init({ duration: 800 });
-    document.title = "Profil | Jules Vannelli";
+    document.title = "Profile | Jules Vannelli";
   }, []);
 
   return (
@@ -20,18 +20,25 @@ export default function Profil() {
 
       {/* ---------- BENTO GRID ---------- */}
       <div className="profil-grid">
-        
         {/* À PROPOS - LARGE CARD */}
         <div className="profil-card grid-span-2" data-aos="fade-up">
           <h2>L'Explorateur Numérique</h2>
           <p>
-            Mon parcours est une quête de compréhension. De la rigueur analytique du <strong>Droit</strong> à l'esthétique de l'<strong>Art du Spectacle</strong>, j'ai finalement trouvé mon point d'ancrage dans l'informatique. 
+            Mon parcours est une quête de compréhension. De la rigueur
+            analytique du <strong>Droit</strong> à l'esthétique de l'
+            <strong>Art du Spectacle</strong>, j'ai finalement trouvé mon point
+            d'ancrage dans l'informatique.
           </p>
           <p>
-            Je ne me contente pas de coder : je cherche à comprendre le "pourquoi" derrière chaque technologie. Que ce soit en manipulant mes propres serveurs ou en concevant des systèmes complexes, je vois le développement comme un artisanat moderne où chaque ligne de code répond à un besoin de création et de maîtrise.
+            Je ne me contente pas de coder : je cherche à comprendre le
+            "pourquoi" derrière chaque technologie. Que ce soit en manipulant
+            mes propres serveurs ou en concevant des systèmes complexes, je vois
+            le développement comme un artisanat moderne où chaque ligne de code
+            répond à un besoin de création et de maîtrise.
           </p>
           <div className="vibe-tags">
-            <span>Créatif</span> <span>Rêveur</span> <span>Flexible</span> <span>Curieux</span>
+            <span>Créatif</span> <span>Rêveur</span> <span>Flexible</span>{" "}
+            <span>Curieux</span>
           </div>
         </div>
 
@@ -39,16 +46,32 @@ export default function Profil() {
         <div className="profil-card" data-aos="fade-up" data-aos-delay="100">
           <h2>Architecte & Artisan</h2>
           <p>
-            J'aime autant découvrir de nouveaux horizons comme <strong>Docker</strong> ou <strong>Vite</strong> que bâtir des architectures solides. Mon propre serveur est mon laboratoire où je teste, casse et reconstruis pour mieux apprendre.
+            J'aime autant découvrir de nouveaux horizons comme{" "}
+            <strong>Docker</strong> ou <strong>Vite</strong> que bâtir des
+            architectures solides. Mon propre serveur est mon laboratoire où je
+            teste, casse et reconstruis pour mieux apprendre.
           </p>
+          <div className="vibe-tags">
+            <span>Expérimenter</span>
+            <span>Réseau</span>
+          </div>
         </div>
 
         {/* STREAM & TOOLS */}
         <div className="profil-card" data-aos="fade-up" data-aos-delay="200">
           <h2>Stream & Dev</h2>
           <p>
-            Le stream est mon espace de partage. Je développe mes propres <strong>solutions de diffusion</strong> et outils vidéo personnalisés pour transformer ma passion pour l'image en expériences interactives uniques.
+            Le stream est mon espace de partage. Je développe mes propres{" "}
+            <strong>solutions de diffusion</strong> et outils vidéo
+            personnalisés pour transformer mes passions en
+            expériences interactives uniques.
           </p>
+          <div className="vibe-tags">
+            <span>Partage</span>
+            <span>Twitch</span>
+            <span>Gaming</span>
+            <span>Chatting</span>
+          </div>
         </div>
 
         {/* COMPETENCES WEB */}
@@ -60,6 +83,12 @@ export default function Profil() {
             <li>Symfony & PHP</li>
             <li>API REST & Git</li>
           </ul>
+          <div className="vibe-tags">
+            <span>Framework</span>
+            <span>Backend</span>
+            <span>Frontend</span>
+            <span>Versioning</span>
+          </div>
         </div>
 
         {/* LOGICIEL & CYBER */}
@@ -71,19 +100,54 @@ export default function Profil() {
             <li>Scripts PowerShell (Cyber)</li>
             <li>Automatisation VBA</li>
           </ul>
+          <div className="vibe-tags">
+            <span>Client lourd</span>
+            <span>Pentesting</span>
+            <span>Automatisation</span>
+          </div>
         </div>
 
         {/* PASSIONS - LARGE CARD */}
-        <div className="profil-card grid-span-2" data-aos="fade-up" data-aos-delay="200">
-          <h2>Au-delà de l'écran</h2>
-          <p>
-            Quand je ne suis pas sur un projet, je suis probablement sur <strong>Valorant</strong>, <strong>League of Legends</strong>, ou en train d'explorer les rues de <strong>Cyberpunk 2077</strong>. 
-          </p>
-          <p>
-            Grand fan de <strong>Star Wars</strong> (oui, je coche toutes les cases du cliché, mais j'assume !), je suis aussi un passionné d'<strong>échecs</strong>. Ce jeu m'apprend la stratégie et la patience, des qualités que je réinjecte chaque jour dans mes lignes de code.
-          </p>
-        </div>
+        <div
+          className="profil-card grid-span-2"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <h2 className="auDela">Au-delà du code</h2>
 
+          <p>
+            Ma curiosité ne s'arrête pas au terminal. Je suis un passionné d'
+            <strong>audiovisuel</strong> : du script au montage, en passant par
+            le travail du son et la photo, j'aime construire des récits et
+            capturer des ambiances. Cette fibre créative complète ma rigueur
+            technique.
+          </p>
+
+          <p>
+            Pour garder l'équilibre, je me tourne vers la{" "}
+            <strong>musculation</strong> et la <strong>nature</strong>. Que ce
+            soit en poussant de la fonte ou en partant en{" "}
+            <strong>voyage</strong> explorer de nouveaux paysages, j'ai besoin
+            de ce contact avec le réel pour recharger les batteries.
+          </p>
+
+          <p>
+            Côté stratégie, je suis un grand amateur d'<strong>échecs</strong>,
+            un jeu qui m'apprend la patience et l'anticipation. Et bien sûr, je
+            n'oublie de rester dans le cliché du nerd : entre deux parties sur{" "}
+            <strong>Valorant</strong> ou <strong>LoL</strong>, je reste un fan
+            inconditionnel de l'univers <strong>Star Wars</strong> et de
+            l'esthétique de <strong>Cyberpunk 2077</strong>.
+          </p>
+          <div className="vibe-tags">
+            <span>Créatif</span>
+            <span>Rêveur</span>
+            <span>Santé</span>
+            <span>Échecs</span>
+            <span>CD Projekt</span>
+            <span>Riot</span>
+          </div>
+        </div>
       </div>
       {/* BARRE DE SÉPARATION */}
       {/* <div className="profil-divider" data-aos="zoom-in"></div> */}
@@ -97,7 +161,7 @@ export default function Profil() {
               <div className="timeline-dot"></div>
               <div className="timeline-content">
                 <span>2024 - Présent</span>
-                <h3>BTS SIO (Option SLAM)</h3>
+                <h3>BTS SIO (Spé SLAM) | Annonay</h3>
                 <p>
                   Expertise en solutions logicielles et applications métiers.
                   Apprentissage approfondi du C#, du développement Web et de la
@@ -126,9 +190,9 @@ export default function Profil() {
                 <span>2022 - 2023</span>
                 <h3>1 année Licence de Droit | Valence</h3>
                 <p>
-                  Etude du droit visant à aquérir une connaissance approfondie
+                  Etude du droit visant à acquérir une connaissance approfondie
                   des fondements juridiques et des principes de la justice
-                  française et intérnationnale.
+                  française et intérnationale.
                 </p>
               </div>
             </div>
@@ -139,10 +203,10 @@ export default function Profil() {
               <div className="timeline-content">
                 <span>2022</span>
                 <h3>
-                  Baccalauréat général - Spécialités Sciences Economiques et
-                  Sociales, Histoire Géo - Géopolotique et Sciences Politiques
+                  Baccalauréat général - SES et HGGSP (option DGEMC) | Pierrelatte
                 </h3>
-                <p></p>
+                <p>avec les spécialités Sciences Economiques et
+                  Sociales, Histoire Géo - Géopolitique et Sciences Politiques, j'ai pu développer une solide base en analyse économique et politique.</p>
               </div>
             </div>
 
