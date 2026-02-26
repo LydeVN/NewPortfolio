@@ -31,9 +31,12 @@ const Footer = () => {
         <div className="footer-section social">
           <h4>Réseaux</h4>
           <div className="footer-nav">
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/jules-van-253830318/" target="_blank" rel="noreferrer"><i className="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/LydeVN" target="_blank" rel="noreferrer"><i className="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/jules.vnl/" target="_blank" rel="noreferrer"><i className="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/LydeVN" target="_blank" rel="noreferrer"><i className="fa-brands fa-twitter"></i></a>
           </div>
+
         </div>
       </div>
 

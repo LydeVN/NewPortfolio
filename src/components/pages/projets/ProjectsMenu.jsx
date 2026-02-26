@@ -10,7 +10,7 @@ export default function ProjectsMenu() {
   const projectStats = {
     scolaire: 2,
     ppe: 2,
-    perso: 4
+    perso: 3
   };
 
   useEffect(() => {
