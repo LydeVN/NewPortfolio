@@ -78,9 +78,9 @@ export default function Profil() {
         <div className="profil-card" data-aos="fade-up">
           <h2>Web Stack</h2>
           <ul className="profil-list">
-            <li>React.js (Vite)</li>
+            <li>React + Vite</li>
             <li>Node.js / Express</li>
-            <li>Symfony & PHP</li>
+            <li>Symfony & PHP | Docker</li>
             <li>API REST & Git</li>
           </ul>
           <div className="vibe-tags">
