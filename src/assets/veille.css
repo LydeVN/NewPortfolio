@@ -135,7 +135,7 @@
 .is-active h2 { font-size: 2rem; }
 
 .veille-date {
-    margin: 8px 0;
+    margin: 2px 0;
     font-size: 0.9rem;
     color: var(--color-text-neutral);
 }

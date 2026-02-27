@@ -63,7 +63,7 @@ export default function BtsSio() {
 
         {/* --------- SLAM --------- */}
         <div className="bts-card" data-aos="fade-up">
-          <h2>Mon option : SLAM</h2>
+          <h2 id="slam">Mon option : SLAM</h2>
           <p>
             L’option <strong>SLAM</strong> est centrée sur le développement d’applications et
             la gestion des données.
@@ -83,46 +83,46 @@ export default function BtsSio() {
         <h2>Compétences du BTS SIO</h2>
         <p>Voici les compétences officielles travaillées durant la formation :</p>
 
-        <ul className="bts-list">
+        <ul className="bts-list bts-list-skills">
 
           {/* ---------------- C1 Gestion du patrimoine ---------------- */}
           <li>
-            <strong>1. Gérer le patrimoine informatique</strong><br />
+            <strong>C1. Gérer le patrimoine informatique</strong><br />
             Référentiels, documentation technique, inventaire, déploiement, sécurité AD, RGPD,
             contrats, supervision, gestion des sauvegardes.
           </li>
 
           {/* ---------------- C2 Support ---------------- */}
           <li>
-            <strong>2. Répondre aux incidents & demandes d’assistance</strong><br />
+            <strong>C2. Répondre aux incidents & demandes d’assistance</strong><br />
             Support utilisateurs, base de connaissances, ITIL, diagnostic, traitement d’incidents,
             documentation.
           </li>
 
           {/* ---------------- C3 Présence en ligne ---------------- */}
           <li>
-            <strong>3. Développer la présence en ligne de l'organisation</strong><br />
+            <strong>C3. Développer la présence en ligne de l'organisation</strong><br />
             Création et gestion de sites web, SEO, e-réputation, réseaux sociaux, gestion des données
             personnelles, nom de domaine.
           </li>
 
           {/* ---------------- C4 Travail en mode projet ---------------- */}
           <li>
-            <strong>4. Travailler en mode projet</strong><br />
+            <strong>C4. Travailler en mode projet</strong><br />
             Analyse des besoins, organisation de projet, méthodes (V, Agile), planification, 
             indicateurs de suivi et gestion des écarts.
           </li>
 
           {/* ---------------- C5 Mise à disposition d’un service ---------------- */}
           <li>
-            <strong>5. Mettre à disposition un service informatique</strong><br />
+            <strong>C5. Mettre à disposition un service informatique</strong><br />
             Tests unitaires, intégration, production, déploiement, documentation utilisateur, 
             formation et accompagnement.
           </li>
 
           {/* ---------------- C6 Développement professionnel ---------------- */}
           <li>
-            <strong>6. Organiser son développement professionnel</strong><br />
+            <strong>C6. Organiser son développement professionnel</strong><br />
             Veille technologique, stratégies d’amélioration continue, construction de son 
             projet professionnel.
           </li>

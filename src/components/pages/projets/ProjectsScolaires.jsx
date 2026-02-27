@@ -6,7 +6,7 @@ import "../../../assets/projets/projets.css";
 import handichienImg1 from "../../../assets/img/screenhandichien1.png";
 import gtaImg1 from "../../../assets/img/screengta1.png";
 
-export default function Projects() {
+export default function Projects1() {
   useEffect(() => {
     AOS.init({ duration: 800 });
     document.title = "Mes Projets | Jules Vannelli";
@@ -16,8 +16,7 @@ export default function Projects() {
     <main className="projects-page my-theme">
       {/* HERO */}
       <section className="projects-hero" data-aos="fade-down">
-        <h1>Mes Projets</h1>
-        <p>Projets scolaires, en groupe et personnels</p>
+        <h1>Projets scolaires</h1>
       </section>
 
       {/* =========================

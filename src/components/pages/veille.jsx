@@ -5,41 +5,41 @@ import "../../assets/veille.css";
 import "../../assets/maincolors.css";
 
 export default function Veille() {
-    const [activeArticle, setActiveArticle] = useState(null);
+  const [activeArticle, setActiveArticle] = useState(null);
 
-    useEffect(() => {
-        AOS.init({ duration: 800, once: true });
-        document.title = "Veille | Jules Vannelli";
-    }, []);
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+    document.title = "Veille | Jules Vannelli";
+  }, []);
 
-    const toggleArticle = (id, event) => {
-        const isOpening = activeArticle !== id;
-        setActiveArticle(isOpening ? id : null);
+  const toggleArticle = (id, event) => {
+    const isOpening = activeArticle !== id;
+    setActiveArticle(isOpening ? id : null);
 
-        if (isOpening) {
-            const element = event.currentTarget;
-            setTimeout(() => {
-                element.scrollIntoView({
-                    behavior: "smooth",
-                    inline: "center",
-                    block: "nearest"
-                });
-            }, 300);
-        }
-    };
+    if (isOpening) {
+      const element = event.currentTarget;
+      setTimeout(() => {
+        element.scrollIntoView({
+          behavior: "smooth",
+          inline: "center",
+          block: "nearest",
+        });
+      }, 300);
+    }
+  };
 
-    return (
-        <main className="veille-page my-theme">
+  return (
+    <main className="veille-page my-theme">
+      {/* HEADER */}
+      <section className="veille-header" data-aos="fade-down">
+        <h1>Veille Technologique</h1>
+        <p className="veille-intro">
+          Analyse des évolutions du secteur numérique, des enjeux de l'IA et des
+          transformations du marché de l'emploi.
+        </p>
+      </section>
 
-            {/* HEADER */}
-            <section className="veille-header" data-aos="fade-down">
-                <h1>Veille Technologique — Cybersécurité</h1>
-                <p className="veille-intro">
-                    Exploration des menaces émergentes, des solutions de défense et des évolutions stratégiques du SI.
-                </p>
-            </section>
-
-            {/* SECTION SOURCES */}
+      {/* SECTION SOURCES */}
             <section className="veille-sources-section" data-aos="fade-up">
                 <h2 className="section-subtitle">Mes Sources & Inspirations</h2>
                 <div className="sources-grid">
@@ -68,119 +68,436 @@ export default function Veille() {
                 </div>
             </section>
 
-            <h2 className="section-subtitle center" data-aos="fade-up">Analyses & Articles</h2>
+      {/* ==========================================
+                SUJET 1 : L'IA DANS LE MONDE DU TRAVAIL
+            =========================================== */}
+      <section className="veille-topic-section" data-aos="fade-up">
+        <h2 className="section-subtitle center">
+          Sujet 1 : L'IA dans le monde du travail
+        </h2>
 
-            {/* CARROUSEL */}
-            <div className="veille-carousel-container" data-aos="fade-up">
-                <button className="carousel-btn left" onClick={() => {
-                    document.querySelector(".veille-carousel").scrollBy({ left: -500, behavior: "smooth" });
-                }}>◀</button>
+        <div className="topic-intro-box">
+          <h3>1. État de l'art initial</h3>
+          <p>
+            L'intelligence artificielle, autrefois cantonnée à des tâches de
+            calcul pur, s'est transformée avec l'arrivée des modèles génératifs
+            (LLM) et plus récemment de l'<strong>IA agentique</strong>. Cette
+            dernière ne se contente plus de répondre, mais peut agir de manière
+            autonome. Le contexte actuel est marqué par une intégration massive
+            dans les outils de productivité, redéfinissant les compétences
+            attendues sur le marché de l'emploi.
+          </p>
+        </div>
 
-                <div className="veille-carousel">
+        <div className="veille-carousel-container">
+          <button
+            className="carousel-btn left"
+            onClick={() => {
+              document
+                .querySelector("#carousel-ia")
+                .scrollBy({ left: -500, behavior: "smooth" });
+            }}
+          >
+            ◀
+          </button>
 
-                    {/* === ARTICLE 1 === */}
-                    <article 
-                        className={`veille-card ${activeArticle === 1 ? "is-active" : "is-collapsed"}`} 
-                        onClick={(e) => toggleArticle(1, e)}
-                    >
-                        <div className="card-header">
-                            <h2>Attaque DDoS record : 15,72 Tbps contrés par Azure</h2>
-                            <p className="veille-date">18 novembre 2025</p>
-                        </div>
-                        
-                        <div className="card-content">
-                            <p>Microsoft a révélé avoir arrêté la plus grande attaque DDoS jamais enregistrée : 
-                            <strong> 15,72 Tbps </strong> provenant du botnet Aisuru, une variante de Turbo Mirai infectant plus de 
-                            <strong> 500 000 appareils IoT </strong>.</p>
-                            
-                            <p>Avec plus de <strong>3,64 milliards de paquets par seconde</strong>, la charge visait une région Azure en Australie. Le botnet s’est propagé via une mise à jour corrompue de routeurs TotoLink au printemps 2025.</p>
+          <div className="veille-carousel" id="carousel-ia">
+            {/* ACTUALITÉ JANVIER 2026 */}
+            <article
+              className={`veille-card ${activeArticle === 1 ? "is-active" : "is-collapsed"}`}
+              onClick={(e) => toggleArticle(1, e)}
+            >
+              <div className="card-header">
+                <p className="veille-date">Janvier 2026</p>
+                <h2>L'IA Agentique : Vers une rupture du marché junior</h2>
+              </div>
+              <div className="card-content">
+                <p>
+                  L'évolution de l'IA générative vers l'
+                  <strong>IA agentique</strong> marque un tournant : la machine
+                  devient capable de mener des missions sans intervention
+                  humaine. Cette mutation bouscule déjà les recrutements.
+                  L'Université de Stanford note une baisse de 13 % des offres
+                  pour les postes débutants les plus exposés.
+                </p>
+                <p>
+                  Aux États-Unis, un "phénomène sidérant" émerge : le chômage
+                  des jeunes diplômés augmente plus vite que la moyenne
+                  nationale. Les tâches traditionnelles des juniors (analyse,
+                  préparation de dossiers) sont désormais automatisées de
+                  manière fiable. Les grandes entreprises technologiques ont
+                  réduit leurs embauches de débutants de 50 % par rapport à
+                  2019. Le savoir académique devient secondaire face à la
+                  capacité à piloter l'IA, transformant radicalement les
+                  critères de sélection.
+                </p>
+                <p>
+                  <a
+                    href="https://www.radiofrance.fr/franceinter/podcasts/le-reportage-d-on-n-arrete-pas-l-eco/le-reportage-d-on-n-arrete-pas-l-eco-du-samedi-24-janvier-2026-8827194"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Source 1
+                  </a>{" "}
+                  |{" "}
+                  <a
+                    href="https://www.rtl.fr/actu/economie-consommation/ce-phenomene-siderant-prefigure-ce-qui-peut-arriver-en-france-comment-l-ia-detruit-l-acces-des-jeunes-americains-au-marche-du-travail-7900592183"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Source 2
+                  </a>
+                </p>
+              </div>
+              {activeArticle !== 1 && (
+                <span className="read-more">Cliquez pour lire le résumé</span>
+              )}
+            </article>
 
-                            <h3>Un botnet en expansion</h3>
-                            <p>Aisuru contrôle plus de 500 000 adresses IP, générant un trafic équivalent à « un million de vidéos 4K simultanées ». Sa croissance illustre la fragilité persistante des objets connectés.</p>
+            {/* ACTUALITÉ DÉCEMBRE 2025 */}
+            <article
+              className={`veille-card ${activeArticle === 3 ? "is-active" : "is-collapsed"}`}
+              onClick={(e) => toggleArticle(3, e)}
+            >
+              <div className="card-header">
+                <p className="veille-date">Décembre 2025</p>
+                <h2>Limites et Résistances : L'IA face à la réalité humaine</h2>
+              </div>
+              <div className="card-content">
+                <p>
+                  Malgré l'enthousiasme, une résistance s'organise. Des marques
+                  comme Dove interdisent les représentations générées par IA
+                  pour préserver l'authenticité. Sur le plan technique,
+                  l'autonomie totale reste limitée : des recherches de Carnegie
+                  Mellon révèlent que les agents IA échouent à plus de 75 % des
+                  tâches complexes par manque de compréhension des instructions
+                  implicites ou des compétences sociales.
+                </p>
+                <p>
+                  Le consensus actuel suggère que l'IA ne remplace pas les
+                  créateurs, mais que les designers utilisant l'IA remplaceront
+                  ceux qui ne le font pas. L'outil doit rester un support au
+                  prototypage rapide plutôt qu'un substitut au travail de fond.
+                </p>
+                <p>
+                  <a
+                    href="https://www.ibm.com/fr-fr/think/insights/ai-in-art"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Source 1
+                  </a>{" "}
+                  |{" "}
+                  <a
+                    href="https://www.futura-sciences.com/tech/actualites/technologie-entreprise-dirigee-ia-conclusions-disent-tres-long-notre-avenir-travail-c7g3-129495/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Source 2
+                  </a>
+                </p>
+              </div>
+              {activeArticle !== 3 && (
+                <span className="read-more">Cliquez pour lire le résumé</span>
+              )}
+            </article>
 
-                            <h3>La réaction d’Azure</h3>
-                            <p>Azure a automatiquement activé ses mécanismes de mitigation : filtrage, redirection du trafic et maintien de la disponibilité des services.</p>
+            {/* ACTUALITÉ NOVEMBRE 2025 */}
+            <article
+              className={`veille-card ${activeArticle === 2 ? "is-active" : "is-collapsed"}`}
+              onClick={(e) => toggleArticle(2, e)}
+            >
+              <div className="card-header">
+                <p className="veille-date">Novembre 2025</p>
+                <h2>Le recrutement à l'heure de la transparence et de l'IA</h2>
+              </div>
+              <div className="card-content">
+                <p>
+                  Le recrutement entre dans une ère de "bureautique avancée" où
+                  l'IA devient un assistant quotidien pour rédiger des offres et
+                  structurer les entretiens. Chez Hellowork, l'IA amplifie la
+                  relation plutôt que de la remplacer, captant des signaux
+                  d'expérience au-delà du simple CV.
+                </p>
+                <p>
+                  Parallèlement, des initiatives pédagogiques montrent que l'IA
+                  peut être un assistant d'écriture créative efficace, à
+                  condition de former les élèves à formuler des consignes
+                  précises (prompts) et à garder la maîtrise du contenu. L'enjeu
+                  de 2026 est double : intégrer ces outils pour gagner en
+                  productivité tout en répondant aux nouvelles normes
+                  européennes de transparence salariale.
+                </p>
+                <p>
+                  <a
+                    href="https://www.helloworkplace.fr/les-grands-enjeux-du-recrutement-en-2026/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Source 1
+                  </a>{" "}
+                  |{" "}
+                  <a
+                    href="https://www.cafepedagogique.net/2025/11/24/christelle-lacroix-faire-de-lia-un-assistant-decriture-creative/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Source 2
+                  </a>
+                </p>
+              </div>
+              {activeArticle !== 2 && (
+                <span className="read-more">Cliquez pour lire le résumé</span>
+              )}
+            </article>
 
-                            <h3>Tendance inquiétante</h3>
-                            <p>Cloudflare note une hausse de <strong>358% des attaques DDoS</strong> en un an.</p>
+            {/* ACTUALITÉ OCTOBRE 2025 */}
+            <article
+              className={`veille-card ${activeArticle === 4 ? "is-active" : "is-collapsed"}`}
+              onClick={(e) => toggleArticle(4, e)}
+            >
+              <div className="card-header">
+                <p className="veille-date">Octobre 2025</p>
+                <h2>
+                  IA & Emploi : Vers une automatisation des "Cols Blancs"
+                </h2>
+              </div>
+              <div className="card-content">
+                <h3>
+                  Le diagnostic : Une menace directe sur les fonctions
+                  qualifiées
+                </h3>
+                <p>
+                  En octobre 2025, le débat sur l'IA au travail franchit une
+                  étape critique. Dario Amodei (Anthropic) alerte sur une
+                  possible disparition de{" "}
+                  <strong>50 % des emplois de "cols blancs" débutants</strong>,
+                  projetant un chômage sectoriel de 10 à 20 % d'ici 5 ans.
+                  OpenAI confirme cette tendance avec l'outil{" "}
+                  <strong>GDPval</strong>, qui démontre que l'IA peut déjà
+                  accomplir des tâches complexes (analyses financières, rapports
+                  juridiques, logistique) avec un niveau de performance
+                  équivalent à un humain ayant{" "}
+                  <strong>14 ans d'expérience</strong>.
+                </p>
 
-                            <h3>Conclusion</h3>
-                            <p>L’incident illustre la nécessité pour les entreprises d’investir dans des solutions anti-DDoS robustes.</p>
-                        </div>
-                        {activeArticle !== 1 && <span className="read-more">Cliquez pour lire l'analyse</span>}
-                    </article>
+                <h3>La Génération Z en première ligne</h3>
+                <p>
+                  Le marché subit une réduction drastique des "jobs d'entrée"
+                  (call centers, support, vente), privant les jeunes diplômés
+                  des portes d'accès traditionnelles pour gravir les échelons.
+                  Steve Preston (Goodwill) souligne une situation alarmante :
+                  les entreprises remplacent les postes juniors par
+                  l'automatisation, créant un <strong>chômage global</strong>{" "}
+                  pour les nouveaux arrivants. Si certains économistes nuancent
+                  ce constat par le manque de maturité reproché à la Gen Z, la
+                  montée en compétence des IA rend les travailleurs diplômés de
+                  plus en plus vulnérables à court terme.
+                </p>
 
-                    {/* === ARTICLE 2 === */}
-                    <article 
-                        className={`veille-card ${activeArticle === 2 ? "is-active" : "is-collapsed"}`} 
-                        onClick={(e) => toggleArticle(2, e)}
-                    >
-                        <div className="card-header">
-                            <h2>64 % des entreprises EMEA prennent des raccourcis risqués</h2>
-                            <p className="veille-date">9 octobre 2025</p>
-                        </div>
-                        
-                        <div className="card-content">
-                            <p>Une étude d’Insight Enterprises révèle que <strong>64 % des entreprises EMEA</strong> reconnaissent adopter des solutions temporaires et des raccourcis risqués pour maintenir leur sécurité, faute de compétences cyber suffisantes.</p>
+                <h3>
+                  Les leviers de résilience : Droits sociaux et compétences
+                  numériques
+                </h3>
+                <p>
+                  Face à ce "pari de croissance" des employeurs, les
+                  représentants syndicaux insistent sur le fait que les salariés
+                  ne doivent pas subir l'outil. La valorisation des travailleurs
+                  et l'autonomie restent les seuls vrais moteurs de productivité
+                  durable. L'enjeu se déplace vers deux axes majeurs :
+                </p>
+                <ul>
+                  <li>
+                    <strong>La régulation sociale :</strong> Imposer la
+                    consultation et la formation pour éviter que l'IA ne soit un
+                    outil d'aliénation.
+                  </li>
+                  <li>
+                    <strong>La maîtrise technique :</strong> Il ne suffit plus
+                    d'être "né avec un smartphone". La véritable compétence
+                    réside dans le pilotage des outils d'IA en entreprise.
+                  </li>
+                </ul>
 
-                            <p>En France, <strong>75 % des organisations</strong> manquent de compétences en cybersécurité et plus d’un tiers subissent un impact « grave » ou « significatif ».</p>
+                <h3>Conclusion de l'analyse</h3>
+                <p>
+                  L'IA n'est plus un simple gadget de résumé de texte, mais un
+                  moteur capable d'enchaîner des missions professionnelles
+                  complètes. Pour les jeunes actifs, la solution ne réside pas
+                  dans la lutte contre la technologie, mais dans une{" "}
+                  <strong>acculturation profonde</strong> aux outils numériques
+                  avancés pour transformer la menace de remplacement en
+                  opportunité de collaboration homme-machine.
+                </p>
 
-                            <h3>Tension maximale sur les compétences</h3>
-                            <p>En Europe, <strong>76 % des organisations</strong> sont touchées par la pénurie cyber, et 47 % reconnaissent des impacts opérationnels graves.</p>
+                <p className="source-links-article">
+                  <a
+                    href="https://www.humanite.fr/en-debat/conditions-de-travail/avons-nous-besoin-de-lintelligence-artificielle-dans-le-travail-2-2"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Source 1
+                  </a>{" "}
+                  |
+                  <a
+                    href="https://www.radiofrance.fr/franceinfo/podcasts/nouveau-monde/ces-metiers-concurrences-ou-remplaces-par-l-ia-comment-anticiper-2771974"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Source 2
+                  </a>{" "}
+                  |
+                  <a
+                    href="https://www.jeuxvideo.com/news/2034830/cet-expert-du-marche-du-travail-alerte-l-ia-aura-des-consequences-catastrophiques-sur-la-generation-z.htm"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Source 3
+                  </a>
+                </p>
+              </div>
+              {activeArticle !== 4 && (
+                <span className="read-more">
+                  Cliquez pour lire l'analyse complète
+                </span>
+              )}
+            </article>
 
-                            <h3>Des DSI et RSSI sous pression</h3>
-                            <p>L’explosion des architectures hybrides, la complexité des outils, les réglementations croissantes et l’intégration de l’IA bousculent les équipes.</p>
+            {/* ACTUALITÉ SEPTEMBRE 2025 */}
+            <article
+              className={`veille-card ${activeArticle === 5 ? "is-active" : "is-collapsed"}`}
+              onClick={(e) => toggleArticle(5, e)}
+            >
+              <div className="card-header">
+                <p className="veille-date">Septembre 2025</p>
+                <h2>
+                  Le "Canari dans la mine" : Pourquoi l'IA cible prioritairement
+                  les 22-25 ans
+                </h2>
+              </div>
+              <div className="card-content">
+                <h3>Le constat : Une préférence patronale pour les robots</h3>
+                <p>
+                  Une étude de <em>CensusWide</em> révèle un chiffre choc :{" "}
+                  <strong>52 % des employeurs français</strong> préfèrent
+                  désormais former une IA plutôt que d'embaucher un jeune
+                  diplômé. Ce choix, motivé par une rentabilité immédiate,
+                  frappe particulièrement les secteurs de la finance, de
+                  l'architecture et de l'ingénierie. En France comme aux
+                  États-Unis, les recruteurs jugent les IA plus
+                  "opérationnelles" que des juniors dont les compétences
+                  théoriques sont perçues comme devenant rapidement obsolètes
+                  face aux cycles technologiques.
+                </p>
 
-                            <h3>Le recours massif aux MSSP</h3>
-                            <p><strong>75 % des organisations</strong> font déjà appel à des fournisseurs de services managés (MSSP), et près de la moitié externalise plus de 50 % de leurs opérations cyber.</p>
+                <h3>L'expérience comme bouclier générationnel</h3>
+                <p>
+                  Une analyse de l'Université de Stanford, basée sur les données
+                  de paie de millions de travailleurs (ADP), confirme cette
+                  cassure. Tandis que l'emploi global progresse, les
+                  opportunités pour les 22-25 ans{" "}
+                  <strong>stagnent ou chutent de 6 %</strong> dans les métiers
+                  exposés à l'IA (développement, service client). À l'inverse,
+                  les profils expérimentés bénéficient d'un "bouclier anti-IA" :
+                  leurs <strong>connaissances tacites</strong> et leur
+                  intelligence relationnelle accumulées sur le terrain restent,
+                  pour l'instant, impossibles à modéliser pour les algorithmes.
+                  L'IA excelle à reproduire le savoir académique des débutants,
+                  mais échoue à remplacer l'intuition des vétérans.
+                </p>
 
-                            <h3>L’IA : une alliée, pas un substitut</h3>
-                            <p>Seulement <strong>20 %</strong> des organisations ont intégré l’IA avancée. La confiance reste limitée à cause du manque de transparence.</p>
+                <h3>
+                  La réponse : Vers des profils "hybrides" et le Skill Stacking
+                </h3>
+                <p>
+                  Face à l'effondrement du modèle classique "diplôme = emploi",
+                  une nouvelle stratégie émerge : le{" "}
+                  <strong>Skill Stacking</strong> (empilement de compétences).
+                  Pour se démarquer, le jeune actif ne doit plus être un
+                  spécialiste étroit, mais un profil hybride capable de combiner
+                  :
+                </p>
+                <ul>
+                  <li>
+                    <strong>Culture numérique :</strong> Maîtriser le prompt
+                    engineering et les outils no-code.
+                  </li>
+                  <li>
+                    <strong>Intelligence humaine :</strong> Développer
+                    l'empathie, la pensée critique et l'éthique, là où l'IA
+                    reste une simple machine à statistiques.
+                  </li>
+                  <li>
+                    <strong>Esprit entrepreneurial :</strong> Savoir détecter
+                    des opportunités et résoudre des problèmes complexes de
+                    manière créative.
+                  </li>
+                </ul>
 
-                            <h3>Une crise stratégique</h3>
-                            <p>La cybersécurité n’est plus une simple fonction IT : elle doit devenir un pilier stratégique de gouvernance.</p>
-                        </div>
-                        {activeArticle !== 2 && <span className="read-more">Cliquez pour lire l'analyse</span>}
-                    </article>
+                <h3>
+                  Conclusion : L'IA comme amplificateur, non comme remplaçant
+                </h3>
+                <p>
+                  L'étude de Stanford apporte une lueur d'espoir : dans les
+                  secteurs où l'IA est utilisée pour <strong>augmenter</strong>{" "}
+                  l'humain (aide à la décision, optimisation) et non pour le
+                  remplacer, l'emploi des jeunes continue de croître. L'enjeu
+                  pour la nouvelle génération est de passer du statut de
+                  "concurrencé par l'IA" à celui de "pilote de l'IA", en misant
+                  sur des facultés que les machines ne possèdent pas : inspirer,
+                  convaincre et bâtir une culture d'entreprise.
+                </p>
 
-                    {/* === ARTICLE 3 === */}
-                    <article 
-                        className={`veille-card ${activeArticle === 3 ? "is-active" : "is-collapsed"}`} 
-                        onClick={(e) => toggleArticle(3, e)}
-                    >
-                        <div className="card-header">
-                            <h2>AITSM : L’arrivée des LLM et de l’Agentic AI</h2>
-                            <p className="veille-date">10 septembre 2025</p>
-                        </div>
-                        
-                        <div className="card-content">
-                            <p>L’intégration de l’IA dans l’ITSM franchit un cap majeur avec les <strong>LLM</strong> et l’<strong>Agentic AI</strong>. L’objectif : transformer le modèle même du support IT.</p>
+                <p className="source-links-article">
+                  <a
+                    href="https://www.lejournaleconomique.com/2025/09/06/la-france-sacrifie-sa-jeunesse-sur-lautel-de-lia-52-des-employeurs-preferent-former-des-robots-plutot-quembaucher-des-diplomes-qui-deviennent-obsoletes/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Source 1
+                  </a>{" "}
+                  |
+                  <a
+                    href="https://www.forbes.fr/societe/preparer-son-avenir-dans-un-monde-domine-par-lia-mode-demploi-pour-les-ados/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Source 2
+                  </a>{" "}
+                  |
+                  <a
+                    href="https://www.lesechos.fr/travailler-mieux/vie-au-travail/lia-ne-vole-pas-votre-emploi-sauf-si-vous-avez-moins-de-25-ans-2184798"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Source 3
+                  </a>
+                </p>
+              </div>
+              {activeArticle !== 5 && (
+                <span className="read-more">
+                  Cliquez pour lire l'analyse complète
+                </span>
+              )}
+            </article>
+          </div>
 
-                            <h3>Une rupture au-delà de l’automatisation</h3>
-                            <p>Désormais, les IA génératives comprennent le contexte, dialoguent en langage naturel et proposent des actions précises.</p>
-                            <p>Avec l’Agentic AI, les systèmes passeront à des capacités d’action autonome : exécution de workflows et remédiation proactive.</p>
+          <button
+            className="carousel-btn right"
+            onClick={() => {
+              document
+                .querySelector("#carousel-ia")
+                .scrollBy({ left: 500, behavior: "smooth" });
+            }}
+          >
+            ▶
+          </button>
+        </div>
+      </section>
 
-                            <h3>Impact opérationnel et humain</h3>
-                            <p>Les bénéfices sont majeurs :<br />
-                            – réduction des tickets via l’auto-résolution,<br />
-                            – assistants virtuels pour demandes complexes,<br />
-                            – amélioration de la continuité métier via la prévention.</p>
+      <hr className="veille-separator" />
 
-                            <h3>Vers un IT auto-réparateur</h3>
-                            <p>Avec l’Agentic AI, l’IT devient auto-réparateur et apprenant : détection, analyse, correction et validation automatique.</p>
 
-                            <h3>Une mutation culturelle</h3>
-                            <p>L’IA augmente l’impact humain et recentre la DSI sur la valeur métier et la performance stratégique.</p>
-                        </div>
-                        {activeArticle !== 3 && <span className="read-more">Cliquez pour lire l'analyse</span>}
-                    </article>
-
-                </div>
-
-                <button className="carousel-btn right" onClick={() => {
-                    document.querySelector(".veille-carousel").scrollBy({ left: 500, behavior: "smooth" });
-                }}>▶</button>
-            </div>
-        </main>
-    );
+    </main>
+  );
 }
