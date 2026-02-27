@@ -16,7 +16,7 @@ export default function Experiences() {
       {/* HERO SECTION */}
       <section className="projects-hero" data-aos="fade-down">
         <h1>Mes Expériences</h1>
-        <p>Parcours professionnel et immersions en milieu industriel</p>
+        <div>Parcours professionnel et immersions en milieu industriel</div>
       </section>
 
 {/* =========================
@@ -26,9 +26,9 @@ export default function Experiences() {
         <header className="project-head">
           <span className="stage-badge">Stage de 2ème année</span>
           <h2>EDF — CNPE Flamanville 3 (EPR)</h2>
-          <p className="project-sub">
+          <div className="project-sub">
             Cybersécurité & Appui MOA SI au sein du réacteur le plus puissant de France
-          </p>
+          </div>
         </header>
 
         <div className="project-body">
@@ -116,23 +116,76 @@ export default function Experiences() {
       </section>
 
       {/* =========================
-          STAGE 1 : À REMPLIR
+          STAGE 1 : DEV-ID (2025)
       ========================== */}
       <section className="project-wrap" data-aos="fade-up">
         <header className="project-head">
           <span className="stage-badge">Stage de 1ère année</span>
-          <h2>Dev-Id</h2>
-          <p className="project-sub">Description Lorem</p>
+          <h2>Dev-Id — Studio de Création Digitale</h2>
+          <div className="project-sub">
+            Immersion en Game Design et développement 3D au sein d'un écosystème technologique innovant
+          </div>
         </header>
 
         <div className="project-body">
+          {/* 1. CONTEXTE */}
           <article className="project-step" data-aos="fade-up">
-            <h3>Missions réalisées</h3>
+            <h3>1. Contexte</h3>
+            <p>
+              <strong>Dev-Id</strong> est une entreprise de création digitale multidisciplinaire (Web, Mobile, Web3, IA) possédant son propre <strong>Studio 3D & Gaming</strong>. L'entreprise intègre également une Académie dédiée à la formation interne sur des stacks de pointe.
+            </p>
+            <p>
+              J'ai été intégré au pôle Gaming pour travailler sur les mécaniques de jeu et l'expérimentation interactive, entouré d'experts en éco-conception et en technologies immersives.
+            </p>
+          </article>
+
+          {/* 2. OBJECTIFS */}
+          <article className="project-step" data-aos="fade-up">
+            <h3>2. Objectifs</h3>
             <ul className="project-list">
-              <li>Lorem</li>
-              <li>Lorem</li>
-              <li>Lorem</li>
+              <li><strong>Expérimentation :</strong> Créer et prototyper des mécaniques de jeux en 2D et 3D.</li>
+              <li><strong>Production :</strong> Contribuer activement au développement du titre principal en cours de création au studio.</li>
+              <li><strong>Apprentissage :</strong> Maîtriser les workflows professionnels de l'industrie du jeu vidéo.</li>
             </ul>
+          </article>
+
+          {/* 3. TRAVAIL RÉALISÉ */}
+          <article className="project-step" data-aos="fade-up">
+            <h3>3. Travail réalisé</h3>
+            <p>
+              Ma mission principale a consisté à développer des scripts de comportement et des systèmes d'interaction. J'ai pu apporter ma pierre à l'édifice sur le <strong>projet de jeu phare du studio</strong>, en travaillant sur l'intégration d'assets et la logique de gameplay.
+            </p>
+            <p>
+              J'ai également réalisé plusieurs prototypes expérimentaux permettant de tester des boucles de gameplay spécifiques en 3D.
+            </p>
+          </article>
+
+          {/* 4. OUTILS ET TECHNOLOGIES */}
+          <article className="project-step" data-aos="fade-up">
+            <h3>4. Outils et technologies utilisés</h3>
+            <ul className="project-list">
+              <li><strong>Moteur :</strong> Unity Engine (2D/3D).</li>
+              <li><strong>Langage :</strong> C# (Scripting de composants et systèmes).</li>
+              <li><strong>Collaboration :</strong> Unity Version Control (Plastic SCM) pour le travail d'équipe synchronisé.</li>
+            </ul>
+          </article>
+
+          {/* 5. COMPÉTENCES MOBILISÉES */}
+          <article className="project-step" data-aos="fade-up">
+            <h3>5. Compétences mobilisées</h3>
+            <ul className="project-list">
+              <li><strong>C1 :</strong> Programmation orientée objet appliquée au jeu vidéo.</li>
+              <li><strong>C3 :</strong> Conception de scènes et gestion de la physique sous Unity.</li>
+              <li><strong>C4 :</strong> Travail collaboratif au sein d'un pipeline de production studio.</li>
+            </ul>
+          </article>
+
+          {/* 6. BILAN PERSONNEL */}
+          <article className="project-step" data-aos="fade-up">
+            <h3>6. Bilan personnel</h3>
+            <p>
+              Ce stage a été extrêmement enrichissant, tant sur le plan technique qu'humain. Rencontrer des professionnels aux connaissances variées (IA, Web3, 3D) m'a permis d'élargir ma vision du métier. J'y ai découvert la réalité du <strong>travail d'équipe</strong> et l'importance de la <strong>cohésion</strong> pour mener à bien un projet complexe et créatif.
+            </p>
           </article>
         </div>
       </section>

@@ -76,8 +76,6 @@ export default function Projects1() {
             <div className="media-placeholder">
               <div className="media-row">
                 <div className="media-box2"><img src={gtaImg1} alt="Screenshot GTA" /></div>
-                <div className="media-box2">Screenshot #2</div>
-                <div className="media-box2">Screenshot #3</div>
               </div>
             </div>
           </article>
