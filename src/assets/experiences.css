@@ -84,3 +84,24 @@
   border-color: rgba(70, 131, 239, 0.22);
   box-shadow: 0 0 25px rgba(70, 131, 239, 0.12);
 }
+
+/* Tags de personnalité */
+.vibe-tags {
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding-top: 15px;
+  justify-content: center;
+}
+
+.vibe-tags span {
+  background: rgba(217, 70, 239, 0.1);
+  border: 1px solid rgba(217, 70, 239, 0.4);
+  color: var(--color-accent-primary);
+  padding: 5px 15px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}

@@ -35,6 +35,13 @@ export default function Experiences() {
             Cybersécurité & Appui MOA SI au sein du réacteur le plus puissant de
             France
           </div>
+          <div className="vibe-tags">
+            <span>Industrie</span>
+            <span>Cybersécurité</span>
+            <span>Automatisation</span>
+            <span>Électricité</span>
+            <span>EPR</span>
+          </div>
         </header>
 
         <div className="project-body">
@@ -168,10 +175,17 @@ export default function Experiences() {
       <section className="project-wrap" data-aos="fade-up">
         <header className="project-head">
           <span className="stage-badge">Stage de 1ère année</span>
-          <h2>Dev-Id — Studio de Création Digitale basé à Marseille</h2>
+          <h2>Dev-Id — Studio de Création Digitale | Marseille</h2>
           <div className="project-sub">
             Immersion en Game Design et développement 3D au sein d'un écosystème
             technologique innovant
+          </div>
+          <div className="vibe-tags">
+            <span>Développement</span>
+            <span>Jeux vidéo</span>
+            <span>Unity</span>
+            <span>3D</span>
+            <span>Marseille</span>
           </div>
         </header>
 

@@ -99,9 +99,7 @@ export default function Profil() {
             <li>Entity Framework</li>
             <li>Scripts PowerShell (Cyber)</li>
             <li>Automatisation VBA</li>
-            <li>Gantt</li>
-            <li>Figma</li>
-            <li>Jira | Azure DevOps</li>
+            <li>Gantt | Jira | Azure DevOps | Figma</li>
           </ul>
           <div className="vibe-tags">
             <span>Client lourd</span>

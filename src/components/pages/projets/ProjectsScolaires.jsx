@@ -5,6 +5,8 @@ import "../../../assets/maincolors.css";
 import "../../../assets/projets/projets.css";
 import handichienImg1 from "../../../assets/img/screenhandichien1.png";
 import gtaImg1 from "../../../assets/img/screengta1.png";
+import { NavLink } from "react-router-dom";
+import BackButton from "../../backbutton";
 
 export default function Projects1() {
   useEffect(() => {
@@ -14,8 +16,12 @@ export default function Projects1() {
 
   return (
     <main className="projects-page my-theme">
+      <NavLink to="/projets">
+        <BackButton />
+      </NavLink>
       {/* HERO */}
       <section className="projects-hero" data-aos="fade-down">
+        
         <h1>Projets scolaires</h1>
       </section>
 
@@ -25,9 +31,9 @@ export default function Projects1() {
       <section className="project-wrap" data-aos="fade-up">
         <header className="project-head">
           <h2>GTA — Gestion de Tâches Agile</h2>
-          <p className="project-sub">
+          <div className="project-sub">
             Application web inspirée de Scrum / Agile (Kanban, CRUD, rôles)
-          </p>
+          </div>
         </header>
 
         <div className="project-body">
@@ -88,9 +94,9 @@ export default function Projects1() {
       <section className="project-wrap" data-aos="fade-up">
         <header className="project-head">
           <h2>Handi’Chiens — Application mobile</h2>
-          <p className="project-sub">
+          <div className="project-sub">
             Projet en groupe (React Native + Symfony + base distante), démarré le 24/11/2025
-          </p>
+          </div>
         </header>
 
         <div className="project-body">

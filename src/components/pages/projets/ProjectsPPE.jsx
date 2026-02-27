@@ -3,6 +3,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "../../../assets/maincolors.css";
 import "../../../assets/projets/projets.css";
+import { NavLink } from "react-router-dom";
+import BackButton from "../../backbutton";
 
 export default function ProjectsPPE() {
   useEffect(() => {
@@ -12,10 +14,13 @@ export default function ProjectsPPE() {
 
   return (
     <main className="projects-page my-theme">
+      <NavLink to="/projets">
+        <BackButton />
+      </NavLink>
       {/* HERO */}
       <section className="projects-hero" data-aos="fade-down">
         <h1>Projets Professionnels (PPE)</h1>
-        <p>Analyse, conception et réalisation de solutions informatiques</p>
+        <div>Analyse, conception et réalisation de solutions informatiques</div>
       </section>
 
       {/* =========================
@@ -24,7 +29,7 @@ export default function ProjectsPPE() {
       <section className="project-wrap" data-aos="fade-up">
         <header className="project-head">
           <h2>Pépi+ — Gestion de Stocks Connectée</h2>
-          <p className="project-sub">Solution web Full-Stack de traçabilité horticole</p>
+          <div className="project-sub">Solution web Full-Stack de traçabilité horticole</div>
         </header>
 
         <div className="project-body">
@@ -86,7 +91,7 @@ export default function ProjectsPPE() {
       <section className="project-wrap" data-aos="fade-up">
         <header className="project-head">
           <h2>GestImmo — Logiciel de Gestion Immobilière</h2>
-          <p className="project-sub">Application desktop lourde de gestion locative</p>
+          <div className="project-sub">Application desktop lourde de gestion locative</div>
         </header>
 
         <div className="project-body">
