@@ -93,17 +93,22 @@ export default function Profil() {
 
         {/* LOGICIEL & CYBER */}
         <div className="profil-card" data-aos="fade-up" data-aos-delay="100">
-          <h2>Logiciel & Cyber</h2>
+          <h2>Logiciel | Cyber | Gestion de Projet</h2>
           <ul className="profil-list">
             <li>C# (POO & WPF)</li>
             <li>Entity Framework</li>
             <li>Scripts PowerShell (Cyber)</li>
             <li>Automatisation VBA</li>
+            <li>Gantt</li>
+            <li>Figma</li>
+            <li>Jira | Azure DevOps</li>
           </ul>
           <div className="vibe-tags">
             <span>Client lourd</span>
             <span>Pentesting</span>
             <span>Automatisation</span>
+            <span>Agile</span>
+            <span>Maquette</span>
           </div>
         </div>
 

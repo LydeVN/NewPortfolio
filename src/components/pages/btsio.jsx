@@ -16,7 +16,7 @@ export default function BtsSio() {
       {/* ---------- HERO ---------- */}
       <section className="bts-hero" data-aos="fade-down">
         <h1>BTS SIO</h1>
-        <p>Services Informatiques aux Organisations</p>
+        <div>Services Informatiques aux Organisations</div>
       </section>
 
       {/* ---------- INTRO ---------- */}

@@ -6,6 +6,9 @@ import "../../assets/experiences.css";
 import BadUsbImg from "../../assets/img/screenBadUsb.png";
 import screenPong from "../../assets/img/screenPong.png";
 import scriptPlayer1 from "../../assets/img/screenPongPlayer1.png";
+import screenRPG from "../../assets/img/screenRPG.png"
+import screenWalkAnimation from "../../assets/img/screenWalkAnimation.png"
+import screenWalkAnimation2 from "../../assets/img/screenWalkAnimation2.png"
 
 export default function Experiences() {
   useEffect(() => {
@@ -165,7 +168,7 @@ export default function Experiences() {
       <section className="project-wrap" data-aos="fade-up">
         <header className="project-head">
           <span className="stage-badge">Stage de 1ère année</span>
-          <h2>Dev-Id — Studio de Création Digitale</h2>
+          <h2>Dev-Id — Studio de Création Digitale basé à Marseille</h2>
           <div className="project-sub">
             Immersion en Game Design et développement 3D au sein d'un écosystème
             technologique innovant
@@ -248,16 +251,14 @@ export default function Experiences() {
             <h3>5. Compétences mobilisées</h3>
             <ul className="project-list">
               <li>
-                <strong>C1 :</strong> Programmation orientée objet appliquée au
-                jeu vidéo.
+                <strong>C1 :</strong> Gestion serveur et sauvegardes des données.
               </li>
               <li>
-                <strong>C3 :</strong> Conception de scènes et gestion de la
-                physique sous Unity.
-              </li>
-              <li>
-                <strong>C4 :</strong> Travail collaboratif au sein d'un pipeline
+                <strong>C4 :</strong> Utilisation d'outil de travail en mode Projet (Gantt, Unity Workflow). Travail collaboratif au sein d'un pipeline
                 de production studio.
+              </li>
+              <li>
+                <strong>C5 :</strong> Test effectué avec des employés Bêta pour le jeu en développement du studio.
               </li>
             </ul>
           </article>
@@ -270,8 +271,7 @@ export default function Experiences() {
                 <div className="media-box2">
                   <img src={screenPong} alt="Aperçu projet Unity Dev-Id" />
                   <div className="img-caption">
-                    Capture d'écran de l'environnement de développement / Scène
-                    Unity
+                    Capture d'écran d'une scène du premier jeu réalisé
                   </div>
                 </div>
                 <div className="media-box2">
@@ -279,6 +279,19 @@ export default function Experiences() {
                     Exemple d'un script de mouvement du joueur 1
                   </div>
                   <img src={scriptPlayer1} alt="Aperçu projet Unity Dev-Id" />
+                </div>
+                <div className="media-box2">
+                  <img src={screenRPG} alt="Aperçu projet Unity Dev-Id" />
+                  <div className="img-caption">
+                    Aperçu map du jeu RPG
+                  </div>
+                </div>
+                <div className="media-box2">
+                  <div className="img-caption">
+                    Aperçu du workflow de l'animation de marche du personnage
+                  </div>
+                  <img src={screenWalkAnimation} alt="Aperçu projet Unity Dev-Id" />                  
+                  <img src={screenWalkAnimation2} alt="Aperçu projet Unity Dev-Id" />                  
                 </div>
               </div>
             </div>
