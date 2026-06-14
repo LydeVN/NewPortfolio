@@ -6,6 +6,10 @@ import "../../../assets/projets/projets.css";
 import BackButton from "../../backbutton";
 import { NavLink } from "react-router-dom";
 
+// Images
+import botDiscordImg from "../../../assets/img/botdiscord1.png"; 
+import GestionCarriere from "../../../assets/img/dashboardgestcarriere.png";
+
 export default function ProjectsPerso() {
   useEffect(() => {
     AOS.init({ duration: 800 });
@@ -17,6 +21,7 @@ export default function ProjectsPerso() {
       <NavLink to="/projets">
         <BackButton />
       </NavLink>
+      
       {/* HERO */}
       <section className="projects-hero" data-aos="fade-down">
         <h1>Labo & Créations</h1>
@@ -25,6 +30,59 @@ export default function ProjectsPerso() {
           connectés. Chaque projet est un terrain d'expérimentation pour
           maîtriser de nouvelles technologies.
         </p>
+      </section>
+
+      {/* =========================
+          NOUVEAU PROJET : GESTION DE CARRIÈRE & PROJETS (SYMFONY)
+      ========================== */}
+      <section className="project-wrap" data-aos="fade-up">
+        <header className="project-head">
+          <h2>Dashboard de Suivi — Carrière & Projets</h2>
+          <div className="project-sub">Symfony 7 | PostgreSQL | Bootstrap 5 | AJAX</div>
+        </header>
+
+        <div className="project-body">
+          <div className="project-visual-grid">
+            <div className="project-img-container">
+              <img 
+                src={GestionCarriere} 
+                alt="Dashboard de gestion de carrière" 
+                className="project-img"
+              />
+              <div className="img-caption">Interface SaaS — Vue d'ensemble des statistiques</div>
+              <div className="warning">Les données ci-dessus sont des données de démonstration.</div>
+            </div>
+          </div>
+
+          <article className="project-step" data-aos="fade-up">
+            <h3>Le Concept</h3>
+            <p className="narrative-text">
+              Pour optimiser ma recherche d'alternance et la gestion de mes créations, j'ai développé un outil 
+              SaaS personnel. L'objectif était de centraliser mes candidatures et l'état d'avancement de mes 
+              projets dans une interface épurée, professionnelle et sans distractions.
+            </p>
+          </article>
+
+          <article className="project-step" data-aos="fade-up">
+            <h3>Technique & UX</h3>
+            <p className="narrative-text">
+              Développé sous <strong>Symfony 7</strong>, ce projet met l'accent sur la fluidité. J'ai intégré 
+              la <strong>Fetch API (AJAX)</strong> pour permettre des changements de statuts instantanés dans 
+              le tableau de bord, sans rechargement de page. Le design est pensé "minimaliste", utilisant 
+              Bootstrap 5 avec des composants personnalisés pour un rendu SaaS haut de gamme.
+            </p>
+          </article>
+
+          <article className="project-step" data-aos="fade-up">
+            <h3>Points clés</h3>
+            <ul className="project-list">
+              <li><strong>Architecture :</strong> Modèle de données relationnel complexe sous PostgreSQL.</li>
+              <li><strong>Formulaires :</strong> Gestion dynamique (champs s'adaptant selon le statut choisi).</li>
+              <li><strong>Déploiement :</strong> Mise en production complète sur un serveur VPS.</li>
+              <li><strong>Dashboard :</strong> Algorithmes de statistiques pour un suivi précis du tunnel de recrutement.</li>
+            </ul>
+          </article>
+        </div>
       </section>
 
       {/* =========================
@@ -37,13 +95,6 @@ export default function ProjectsPerso() {
         </header>
 
         <div className="project-body">
-          <div className="project-visual-grid">
-            {/* Emplacement pour ton screenshot Lydecorp */}
-            <div className="project-img-placeholder">
-              <div className="img-caption">Aperçu Lydecorp / Dashboard</div>
-            </div>
-          </div>
-
           <article className="project-step" data-aos="fade-up">
             <h3>Le Défi</h3>
             <p className="narrative-text">
@@ -76,6 +127,16 @@ export default function ProjectsPerso() {
               <li>Déploiement et maintenance sur un serveur VPS personnel.</li>
             </ul>
           </article>
+          <div className="project-visual-grid">
+            <div className="project-img-container">
+              <img 
+                src={botDiscordImg} 
+                alt="Aperçu du LyBot et son Dashboard" 
+                className="project-img"
+              />
+              <div className="img-caption">Aperçu Lydecorp / Dashboard</div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -100,10 +161,10 @@ export default function ProjectsPerso() {
             <p className="narrative-text">
               Développer des jeux vidéo est pour moi l'aboutissement de la
               programmation. C’est là que le code rencontre l’art et l’émotion.
-              Depuis mes premiers pas sur <strong>Pong</strong>
-              jusqu'à la création de systèmes de <strong>RPG complexes</strong>,
-              mon but a toujours été le même : comprendre comment créer une
-              expérience immersive qui marque les joueurs.
+              Depuis mes premiers pas sur <strong>Pong</strong> jusqu'à la
+              création de systèmes de <strong>RPG complexes</strong>, mon but a
+              toujours été le même : comprendre comment créer une expérience
+              immersive qui marque les joueurs.
             </p>
           </article>
 
@@ -156,7 +217,6 @@ export default function ProjectsPerso() {
 
         <div className="project-body">
           <div className="project-visual-grid">
-            {/* Emplacement pour ton screenshot Portfolio / Tools */}
             <div className="project-img-placeholder">
               <div className="img-caption">Overlay en action / Stats Live</div>
             </div>

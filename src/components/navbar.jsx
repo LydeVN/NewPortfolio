@@ -8,10 +8,15 @@ export default function NavBar() {
 
   return (
     <header className="neon-header my-theme">
-      <div className="neon-line"></div>
-
       <nav className="navbar">
-        {/* Burger (header) — sert uniquement quand le menu est fermé */}
+        {/* Logo à gauche */}
+        <div className="nav-logo">
+          <NavLink to="/" onClick={() => setOpen(false)}>
+            <img src={PictureOfMe} alt="Accueil" />
+          </NavLink>
+        </div>
+
+        {/* Bouton Burger (Desktop masqué, visible sur Mobile) */}
         <button
           type="button"
           className={`burger burger-header ${open ? "active" : ""}`}
@@ -24,20 +29,13 @@ export default function NavBar() {
           <span></span>
         </button>
 
-        {/* Logo */}
-        <div className="nav-logo">
-          <NavLink to="/" onClick={() => setOpen(false)}>
-            <img src={PictureOfMe} alt="Accueil" />
-          </NavLink>
-        </div>
-
-        {/* Overlay (clic pour fermer) */}
+        {/* Overlay pour fermer au clic en dehors */}
         <div
           className={`nav-overlay ${open ? "show" : ""}`}
           onClick={() => setOpen(false)}
         />
 
-        {/* Pill menu */}
+        {/* Menu de navigation (Aligné à droite) */}
         <div className={`nav-links ${open ? "open" : ""}`}>
           <button
             type="button"
@@ -51,27 +49,13 @@ export default function NavBar() {
           </button>
 
           <div className="nav-scroll">
-            <NavLink to="/" onClick={() => setOpen(false)}>
-              Home
-            </NavLink>
-            <NavLink to="/profil" onClick={() => setOpen(false)}>
-              Profil
-            </NavLink>
-            <NavLink to="/bts_sio" onClick={() => setOpen(false)}>
-              BTS SIO
-            </NavLink>
-            <NavLink to="/veille" onClick={() => setOpen(false)}>
-              Veille
-            </NavLink>
-            <NavLink to="/experiences" onClick={() => setOpen(false)}>
-              Expériences
-            </NavLink>
-            <NavLink to="/projets" onClick={() => setOpen(false)}>
-              Projets
-            </NavLink>
-            <NavLink to="/contact" onClick={() => setOpen(false)}>
-              Contact
-            </NavLink>
+            <NavLink to="/" onClick={() => setOpen(false)}>Home</NavLink>
+            <NavLink to="/profil" onClick={() => setOpen(false)}>Profil</NavLink>
+            <NavLink to="/bts_sio" onClick={() => setOpen(false)}>BTS SIO</NavLink>
+            <NavLink to="/veille" onClick={() => setOpen(false)}>Veille</NavLink>
+            <NavLink to="/experiences" onClick={() => setOpen(false)}>Expériences</NavLink>
+            <NavLink to="/projets" onClick={() => setOpen(false)}>Projets</NavLink>
+            <NavLink to="/contact" onClick={() => setOpen(false)}>Contact</NavLink>
           </div>
         </div>
       </nav>

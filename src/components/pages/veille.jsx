@@ -495,7 +495,7 @@ export default function Veille() {
         </div>
       </section>
 
-      <hr className="veille-separator" />
+      {/* <hr className="veille-separator" /> */}
 
 
     </main>
